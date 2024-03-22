@@ -3,8 +3,8 @@
 ## Materi 1: Penyimpanan dan Database
 ## Materi 2: Migrasi dan Inovasi
 ## Anggota
-1.⁠ ⁠Bayu Angkasa Putra
-2.⁠ ⁠Al Nazirul Mubin
-3.⁠ ⁠Muhammad Al Fatih
-4.⁠ ⁠Fairuz Azzahira
-5.⁠ ⁠Syarifah Rizkyna
+1. Bayu Angkasa Putra
+2. Al Nazirul Mubin
+3. Muhammad Al Fatih
+4. ⁠Fairuz Azzahira
+5. ⁠Syarifah Rizkyna
