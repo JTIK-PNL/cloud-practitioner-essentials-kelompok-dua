@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/zpuF8vpS)
 # Kelompok 2
-## Materi 1: Penyimpanan dan Database
-## Materi 2: Migrasi dan Inovasi
+## Materi 5: Penyimpanan dan Database
+## Materi 9: Migrasi dan Inovasi
 ## Anggota
 1. Bayu Angkasa Putra
 2. Al Nazirul Mubin
