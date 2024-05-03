@@ -1,7 +1,12 @@
 ---
 title: "Penyimpanan dan Database"
-author: "Joe Cheng [&lt;joe@rstudio.com&gt;](mailto:joe@rstudio.com)"
-date: "\\#ShinyDevConf — January 30, 2016"
+author: "Anggota Kelompok
+        <br>-Al Nazirul Mubin
+        <br>-Bayu Angkasa Putra
+        <br>-Muhammad Al Fatih
+        <br>-Fairuz Azzahira
+        <br>-Syarifa Rizkyna"
+date: "2024"
 output:
   revealjs::revealjs_presentation:
     theme: sky
@@ -13,11 +18,11 @@ output:
     incremental: false
 ---
 
-## Warm up: Side effects
+## Pengantar
 
 ---
 
-Functions can be executed for one or both of the following reasons:
+## instance store dan amazon electis block store (amazon EBS)
 
 > 1. You want its return value.
 > 2. You want it to have **some other effect**.
@@ -28,7 +33,11 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 
 
 
-## Functions with side effects
+## Amazon Simple storage service (Amazon S3)
+
+> 1. S3 Standard
+> 2. S3
+> 3. S3
 
 ```r
 write.csv(...)
@@ -44,7 +53,7 @@ alarm()
 
 
 
-## More side effects
+## Amazon Elastic File System (Amazon EFS)
 
 ```r
 # Sets a variable in a parent environment
@@ -62,7 +71,7 @@ foo$bar <- TRUE
 
 
 
-## NOT side effects (when inside a function)
+## Amazon Relational Database Service (Amazon RDS)
 
 ```r
 # Modifying *local* variables
@@ -83,7 +92,7 @@ predict(wfit, interval = "prediction")
 
 
 
-## Ehhh... Not side effects
+## Amazon Dynamo DB
 
 ```r
 # Reading from disk
@@ -107,13 +116,13 @@ But if "what happens in `func`, stays in `func`" (besides the return value), the
 
 
 
-## Side effect quiz
+## Amazon Redshift
 
 For each function, write Yes if it has side effects, and No if not.
 
 
 
-## Question 1
+## AWS Database Migration Service
 
 ```r
 function(a, b) {
@@ -123,7 +132,7 @@ function(a, b) {
 
 
 
-## Question 2
+## Layanan Database Tambahan
 
 ```r
 function(values) {
@@ -134,7 +143,7 @@ function(values) {
 
 
 
-## Question 3
+## Ikhtisar
 
 ```r
 function() {
@@ -145,7 +154,7 @@ function() {
 
 
 
-## Question 4
+## Knowlage
 
 ```r
 function(df) {
