@@ -18,7 +18,22 @@ output:
     incremental: false
 ---
 
-## Pengantar
+## Pengantar Penyimpanan dan Database
+
+**Tujuan Pembelajaran**
+Pelajari modul ini sehingga Anda akan memahami bagaimana cara:
+1. Meringkas konsep dasar dari penyimpanan dan database.
+2. Menjelaskan manfaat Amazon Elastic Block Store (Amazon EBS).
+3. Menerangkan manfaat Amazon Simple Storage Service (Amazon S3).
+4. Menjelaskan manfaat Amazon Elastic File System (Amazon EFS).
+5. Merangkum berbagai solusi penyimpanan.
+6. Memaparkan manfaat Amazon Relational Database Service (Amazon RDS).
+7. Memaparkan manfaat Amazon DynamoDB.
+8. Menguraikan berbagai layanan database.
+
+**Pengenalan ke Penyimpanan dan Database**
+Ringkasannya, arsitektur kita telah berkembang menjadi elastis, diskalabel,tahan bencana, dan optimal secara biaya.Kita memiliki jaringan global yang aman dan dapat diprogram sepenuhnya. Dalam menghadapi pertumbuhan pelanggan, program loyalitas bisa menjadi solusi. 
+Namun, untuk melacak dan mengenali pelanggan secara efektif,kartu digital dengan basis data yang tepat diperlukan, jadi membutuhkan penyimpanan dan database (basis data), bukan sembarang database, pilihlah penyimpanan dan database yang tepat sesuai dengan masing-masing kebutuhan. AWS menyediakan berbagai layanan yang cocok untuk membangun solusi data yang sesuai dengan kebutuhan.
 
 ---
 
