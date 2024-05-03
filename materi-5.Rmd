@@ -18,7 +18,22 @@ output:
     incremental: false
 ---
 
-## Pengantar
+## Pengantar Penyimpanan dan Database
+
+**Tujuan Pembelajaran**
+Pelajari modul ini sehingga Anda akan memahami bagaimana cara:
+1. Meringkas konsep dasar dari penyimpanan dan database.
+2. Menjelaskan manfaat Amazon Elastic Block Store (Amazon EBS).
+3. Menerangkan manfaat Amazon Simple Storage Service (Amazon S3).
+4. Menjelaskan manfaat Amazon Elastic File System (Amazon EFS).
+5. Merangkum berbagai solusi penyimpanan.
+6. Memaparkan manfaat Amazon Relational Database Service (Amazon RDS).
+7. Memaparkan manfaat Amazon DynamoDB.
+8. Menguraikan berbagai layanan database.
+
+**Pengenalan ke Penyimpanan dan Database**
+Ringkasannya, arsitektur kita telah berkembang menjadi elastis, diskalabel,tahan bencana, dan optimal secara biaya.Kita memiliki jaringan global yang aman dan dapat diprogram sepenuhnya. Dalam menghadapi pertumbuhan pelanggan, program loyalitas bisa menjadi solusi. 
+Namun, untuk melacak dan mengenali pelanggan secara efektif,kartu digital dengan basis data yang tepat diperlukan, jadi membutuhkan penyimpanan dan database (basis data), bukan sembarang database, pilihlah penyimpanan dan database yang tepat sesuai dengan masing-masing kebutuhan. AWS menyediakan berbagai layanan yang cocok untuk membangun solusi data yang sesuai dengan kebutuhan.
 
 ---
 
@@ -117,12 +132,11 @@ For each function, write Yes if it has side effects, and No if not.
 
 ## AWS Database Migration Service
 
-```r
-function(a, b) {
-  (b - a) / a
-}
-```
-
+AWS Database Migration Service (AWS DMS) memungkinkan pengguna untuk memindahkan database ke lingkungan AWS dengan mudah dan aman.
+Migrasi dapat dilakukan dalam dua jenis: homogen, di mana database sumber dan target memiliki struktur yang sama, dan heterogen, di mana terdapat perbedaan dalam struktur skema, tipe data, atau kode database.
+AWS DMS juga digunakan untuk migrasi ke lingkungan pengembangan atau pengujian, konsolidasi database, dan replikasi data untuk pemulihan bencana atau pemisahan geografis.
+Proses migrasi dengan AWS DMS dilakukan dengan membuat tugas migrasi, mengoneksikannya ke database sumber dan target, dan memulai proses migrasi dengan beberapa klik saja.
+Semua detail teknis dan kompleksitas proses migrasi ditangani oleh AWS DMS.
 
 
 ## Layanan Database Tambahan
