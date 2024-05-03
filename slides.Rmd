@@ -1,16 +1,11 @@
 ---
 title: "Penyimpanan dan Database"
-author: "Anggota Kelompok
-        <br>-Al Nazirul Mubin
-        <br>-Bayu Angkasa Putra
-        <br>-Muhammad Al Fatih
-        <br>-Fairuz Azzahira
-        <br>-Syarifa Rizkyna"
-date: "2024"
+author: "Kelompok dua"
+date: "3 mei 2024"
 output:
   revealjs::revealjs_presentation:
-    theme: solarized
-    transition: slide
+    theme: sky
+    transition: none
     self_contained: true
     css: slides.css
   beamer_presentation:
@@ -18,36 +13,11 @@ output:
     incremental: false
 ---
 
-## Pengantar Penyimpanan dan Database
-
-**Tujuan Pembelajaran**
-
-Pelajari modul agar dapat memahami bagaimana cara:
-
-1. Meringkas konsep dasar dari penyimpanan dan database.
-2. Menjelaskan manfaat Amazon Elastic Block Store (Amazon EBS).
-3. Menerangkan manfaat Amazon Simple Storage Service (Amazon S3).
-4. Menjelaskan manfaat Amazon Elastic File System (Amazon EFS).
-
-## Pengantar Penyimpanan dan Database
-
-5. Merangkum berbagai solusi penyimpanan.
-6. Memaparkan manfaat Amazon Relational Database Service (Amazon RDS).
-7. Memaparkan manfaat Amazon DynamoDB.
-8. Menguraikan berbagai layanan database.
-
-**Pengenalan ke Penyimpanan dan Database**
-
-Ringkasannya, arsitektur kita telah berkembang menjadi elastis, diskalabel,tahan bencana, dan optimal secara biaya.Kita memiliki jaringan global yang aman dan dapat diprogram sepenuhnya.Dalam menghadapi pertumbuhan pelanggan, program loyalitas bisa menjadi
-
-## Pengantar Penyimpanan dan Database
-
-solusi. Namun, untuk melacak dan mengenali pelanggan secara efektif, kartu digital dengan basis data yang tepat diperlukan, jadi membutuhkan penyimpanan dan database (basis data), bukan sembarang database, pilihlah penyimpanan dan database yang tepat sesuai dengan masing-masing kebutuhan. 
-AWS menyediakan berbagai layanan yang cocok untuk membangun solusi data yang sesuai dengan kebutuhan.
+## Warm up: Side effects
 
 ---
 
-## instance store dan amazon electis block store (amazon EBS)
+Functions can be executed for one or both of the following reasons:
 
 > 1. You want its return value.
 > 2. You want it to have **some other effect**.
@@ -58,24 +28,23 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 
 
 
-## Amazon Simple storage service (Amazon S3)
+## Functions with side effects
 
-> <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar </div>
+```r
+write.csv(...)
 
-> 1. <h3> S3 Standard </h3>
-terdapat istilah daya 11 sembilan <br>
-Artinya: <br>
-99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun 
+plot(cars)
 
-> 2. <h3> S3 Standard-interfrequent Access (S3 Standard-Ai) </h3>
-Sebagai penyimpanan backup(cadangan), disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang.
-> 3. S3
+print(x)
 
-## 
+httr.POST(...)
 
+alarm()
+```
 
 
-## Amazon Elastic File System (Amazon EFS)
+
+## More side effects
 
 ```r
 # Sets a variable in a parent environment
@@ -93,21 +62,28 @@ foo$bar <- TRUE
 
 
 
-## Amazon Relational Database Service (Amazon RDS)
+## NOT side effects (when inside a function)
 
-Setelah kita belajar banyak tentang berbagai sistem penyimpanan di AWS yang dapat membantu menyelesaikan pekerjaan kita. Kita juga perlu menjaga relasi antara berbagai tipe data.
+```r
+# Modifying *local* variables
+value <- 10
 
-Tunggu,apa maksudnya???
+# Creating most kinds of objects
+list(a = 1, b = 2)
 
-## Amazon Relational Database Service (Amazon RDS)
+# Data frames are pass-by-value in R so this is OK
+dataset <- dataset %>% filter(count > 3)
 
-Misalnya, seorang pelanggan ditoko kue telah memesan kue yang sama beberapa kali. Nah, melihat hal ini, kita sebagai pemilik toko kue ingin menawarkan diskon promosi untuk pembelian berikutnya.
-Tentu, kita membutuhkan suatu cara untuk mencari relasi semacam ini, bukan?
+# Most calculations
+a + 1
+summary(pressure)
+lm(speed ~ dist, data = cars)
+predict(wfit, interval = "prediction")
+```
 
-Solusi terbaik untuk masalah tersebut adalah dengan menggunakan (RDBMS) Artinya, data yang kita simpan dapat memiliki relasi dengan bagian data lainnya.
 
 
-## Amazon Dynamo DB
+## Ehhh... Not side effects
 
 ```r
 # Reading from disk
@@ -131,22 +107,23 @@ But if "what happens in `func`, stays in `func`" (besides the return value), the
 
 
 
-## Amazon Redshift
+## Side effect quiz
 
 For each function, write Yes if it has side effects, and No if not.
 
 
 
-## AWS Database Migration Service
+## Question 1
 
-AWS Database Migration Service (AWS DMS) memungkinkan pengguna untuk memindahkan database ke lingkungan AWS dengan mudah dan aman.
-Migrasi dapat dilakukan dalam dua jenis: homogen, di mana database sumber dan target memiliki struktur yang sama, dan heterogen, di mana terdapat perbedaan dalam struktur skema, tipe data, atau kode database.
-AWS DMS juga digunakan untuk migrasi ke lingkungan pengembangan atau pengujian, konsolidasi database, dan replikasi data untuk pemulihan bencana atau pemisahan geografis.
-Proses migrasi dengan AWS DMS dilakukan dengan membuat tugas migrasi, mengoneksikannya ke database sumber dan target, dan memulai proses migrasi dengan beberapa klik saja.
-Semua detail teknis dan kompleksitas proses migrasi ditangani oleh AWS DMS.
+```r
+function(a, b) {
+  (b - a) / a
+}
+```
 
 
-## Layanan Database Tambahan
+
+## Question 2
 
 ```r
 function(values) {
@@ -157,7 +134,7 @@ function(values) {
 
 
 
-## Ikhtisar
+## Question 3
 
 ```r
 function() {
@@ -168,7 +145,7 @@ function() {
 
 
 
-## Knowlage
+## Question 4
 
 ```r
 function(df) {
