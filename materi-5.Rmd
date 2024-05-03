@@ -9,7 +9,7 @@ author: "Anggota Kelompok
 date: "2024"
 output:
   revealjs::revealjs_presentation:
-    theme: sky
+    theme: solarized
     transition: slide
     self_contained: true
     css: slides.css
@@ -35,21 +35,18 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 
 ## Amazon Simple storage service (Amazon S3)
 
-> 1. S3 Standard
-> 2. S3
+> <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar </div>
+
+> 1. <h3> S3 Standard </h3>
+terdapat istilah daya 11 sembilan <br>
+Artinya: <br>
+99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun 
+
+> 2. <h3> S3 Standard-interfrequent Access (S3 Standard-Ai) </h3>
+Sebagai penyimpanan backup(cadangan), disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang.
 > 3. S3
 
-```r
-write.csv(...)
-
-plot(cars)
-
-print(x)
-
-httr.POST(...)
-
-alarm()
-```
+## 
 
 
 
