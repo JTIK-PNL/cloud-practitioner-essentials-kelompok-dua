@@ -60,19 +60,47 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 
 ## Amazon Simple storage service (Amazon S3)
 
-> <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar </div>
+> <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar dan tidak terbatas pada skala apapun </div>
 
-> 1. <h3> S3 Standard </h3>
-terdapat istilah daya 11 sembilan <br>
-Artinya: <br>
-99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun 
-
-> 2. <h3> S3 Standard-interfrequent Access (S3 Standard-Ai) </h3>
-Sebagai penyimpanan backup(cadangan), disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang.
-> 3. S3
+<div class="fragment">
+  Amazon S3 juga merupakan, object-level storage *Penyimpanan tingkat objek*. Setiap objek terdiri dari beberapa data, metadata,   dan kunci. <br>
+  <div class="fragment">
+  Ukuran Maximal dari  objek yang dapat di unnggah  yaitu 5 terabyte.
+  </div> <br>
+  <div class="fragment">
+  * Beberapa storage class atau penyimpanan amazon S3
+  </div>
+</div>
 
 ## 
+>1. <h3> S3 Standard </h3>
+terdapat istilah daya 11 sembilan <br>
+Artinya: <br>
+99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun.
+<br>
+<br>
+>2. <h3> S3 Standard-interfrequent Access (S3 Standard-Ai) </h3>
+Sebagai penyimpanan backup(cadangan), disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang.
 
+> 3. <h3> S3 Intelligent-Tiering </h3>
+Pada penyimpanan S3 Intelligent-Tiering, Amazon S3 memantau pola akses objek. jika objek tidak di akses selama 30 hari, amazon S3 akan memindahkan secara otomatis ke standart-IA. <Br>
+
+## 
+>4. <h3>Glacier</h3>
+> <div>Sebagai penyipanan data audit, yang tidak memerlukan proses akses yang langsung pada saat itu.</div>
+<br>
+kebijakan Lifecycle polices <br>
+Misalnya, Anda perlu menyimpan objek dalam S3 Standard selama 90 hari. Lalu, Anda ingin memindahkannya ke S3-IA selama 30 hari ke depan. Kemudian setelah total 120 hari, Anda ingin memindahkannya ke S3 Glacier.<br>
+hal ini diperlukan S3 Lifecycle Polices.
+
+>5. <h3>S3 Glacier Deep Archiver</h3> 
+Amazon Glacier Deep Archiver ini memerlukan waktu 12 hingga 48 jam.
+
+## Kesimpulan Amazon S3
+
+> Kesimpulannya, jika Anda memiliki objek atau file yang lengkap dan hanya membutuhkan sesekali perubahan, maka pilihlah Amazon S3. Namun, jika Anda membutuhkan proses read (baca) data yang kompleks, maka tentu saja Anda perlu memilih Amazon EBS.
+
+>Jadi, memilih penyimpanan yang tepat itu tergantung pada kebutuhan beban kerja Anda. Setiap layanan sebenarnya merupakan solusi yang tepat untuk kebutuhan tertentu. Pahamilah apa yang Anda butuhkan, maka Anda akan tahu layanan mana yang ideal.
 
 
 ## Amazon Elastic File System (Amazon EFS)
