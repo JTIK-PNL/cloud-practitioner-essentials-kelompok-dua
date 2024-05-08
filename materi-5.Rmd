@@ -172,28 +172,113 @@ Ia adalah opsi database relasional kelas enterprise/perusahaan yang terkelola ol
 >- Mencadangkan secara berkelanjutan ke Amazon S3.
 >- Menerapkan point-in-time recovery
 
-## Amazon Dynamo DB
+## <class style="color:black;">Amazon DynamoDB
 
-```r
-# Reading from disk
-readLines("data.csv")
+<p style="text-align:justify; font-size:85%;">
+Database relasional seperti **MySQL** memerlukan skema yang
+terdefinisi dengan baik sebelum Anda dapat menggunakan SQL untuk
+mengambil data. Skema ini biasanya terdiri dari satu atau lebih tabel
+yang memiliki hubungan satu sama lain. Setelah skema telah
+didefinisikan, Anda dapat menggunakan SQL untuk melakukan kueri terhadap
+data.</p>
 
-# Making HTTP GET requests
-httr.GET("https://api.example.com/data.json")
+<p style="text-align:justify; font-size:85%;">
+Database relasional, meskipun umum, dapat mengalami masalah scaling dan
+kinerja saat ditekan. Skema yang tetap juga dapat membatasi
+fleksibilitas dalam jenis data. Jadi, untuk kebutuhan data fleksibel dan
+akses cepat, database relasional seperti **MySQL** tidak
+selalu optimal.</p>
 
-# Reading global variables
-.Random.seed
+##
+<p style="text-align:justify; font-size:85%;">
+**Amazon DynamoDB** adalah database NoSQL yang menggunakan
+pendekatan pasangan kunci-nilai. Dalam DynamoDB, Anda dapat membuat
+tabel untuk menyimpan dan mengambil data. Karena kueri dalam database
+nonrelasional lebih sederhana, memungkinkan fokus pada kumpulan item
+dari satu tabel, tanpa perlu mengelola kueri dari berbagai tabel.</p>
+<p>
+<div class="fragment">
+<p style="text-align:center;font-size:85%;">
+**Contoh sederhana tabel database nonrelasional**</p>
 
-# Modifying the random seed... ehhhhhh...
-runif(10)
-```
+<table style="width:50%">
+  <tr>
+    <th style="text-align:center;">Key</th>
+    <th style="text-align:center;">Value</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="text-align:center;">1</td>
+    <td>**Nama**: Budi</td>
+  </tr>
+  <tr>
+    <td>**Alamat**: Kenanga 123</td>
+  </tr>
+  <tr>
+    <td>**Minuman favorit**: Kopi gula aren</td>
+  </tr>
+  <tr>
+    <td rowspan="3" style="text-align:center;">2</td>
+    <td>**Nama**: Siska</td>
+  </tr>
+  <tr>
+    <td>**Alamat**: Mawar 321</td>
+  </tr>
+  <tr>
+    <td>**Tanggal Lahir**: 5 Juli 1994</td>
+  </tr>
+</table>
 
+##
+<p style="text-align:justify; font-size:85%;">
+Karena **Amazon DynamoDB** adalah database NoSQL alias
+nonrelasional, ia sangat ideal untuk kasus penggunaan tertentu, bukan
+untuk semua beban kerja.</p>
 
+<p style="text-align:justify; font-size:85%;">
+Salah satu contoh penggunaan **DynamoDB** yang luar biasa
+adalah pada saat **Amazon Prime Day** pada tahun 2019.
+Prime Day adalah acara belanja tahunan eksklusif untuk anggota Amazon
+Prime. Selama 48 jam Prime Day, ada 7,11 triliun panggilan ke API
+**DynamoDB**, puncaknya bahkan ada pada 45,4 juta
+permintaan per detik.</p>
 
-If executing your function/expression **leaves the state of the world a little different** than before it executed, **it has side effects**.
+<p><img src="https://d.newsweek.com/en/full/1511181/amazon-prime-day-deals-2019-saving-discounts-coupons.webp?w=790&f=1cc60f178378c8d5b42d605bbaf61338" alt="newsweek.com" width="300" height="180" style="display:block; margin:auto;"/>
+<p style="text-align:center; font-size:50%;">©Newsweek.com</p>
 
-But if "what happens in `func`, stays in `func`" (besides the return value), then it doesn't have side effects.
+##
+<p style="text-align:center; font-size:85%;">
+**Kapan kita harus menggunakan Amazon RDS dan Amazon DynamoDB?**
+<div class="fragment">
 
+<table style="width:100%">
+  <tr>
+    <th style="text-align:center;">Amazon RDS</th>
+    <th style="text-align:center;">Amazon DynamoDB</th>
+  </tr>
+  <tr>
+    <td>Dirancang untuk mengurangi kerumitan administrator sambil memberikan
+ketersediaan tinggi pada pemulihan database.</td>
+    <td>Menggunakan pasangan key-value tanpa memerlukan skema rumit dan dapat
+dioperasikan sebagai database global hanya dengan satu klik.</td>
+  </tr>
+  <tr>
+    <td>Anda dapat mengontrol data, skema, dan jaringan.</td>
+    <td>Menawarkan throughput tinggi, dapat menskalakan hingga petabyte, dan
+menyediakan akses API yang detail.</td>
+  </tr>
+  <tr>
+    <td>Mampu membangun sistem analisis data yang kompleks.</td>
+    <td>Memungkinkan Anda membangun database yang kuat dan sangat cepat tanpa
+memerlukan fungsionalitas yang rumit.</td>
+  </tr>
+  <tr>
+    <td>Ideal untuk analisis sistem manajemen supply chain (rantai pasokan).</td>
+    <td>Cocok untuk data sederhana seperti daftar kontak karyawan dengan informasi dasar seperti nama, nomor telepon, email, dan ID karyawan, dsb.</td>
+  </tr>
+</table>
+
+<p style="text-align:center; font-size:50%;">
+Perbandingan layanan antara Amazon RDS dengan Amazon DynamoDB</p>
 
 
 ## Amazon Redshift
