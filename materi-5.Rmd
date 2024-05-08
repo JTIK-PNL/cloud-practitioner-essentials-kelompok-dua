@@ -63,9 +63,10 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 > <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar dan tidak terbatas pada skala apapun </div>
 
 <div class="fragment">
-  Amazon S3 juga merupakan, object-level storage *Penyimpanan tingkat objek*. Setiap objek terdiri dari beberapa data, metadata,   dan kunci. <br>
-  <div class="fragment">
-  Ukuran Maximal dari  objek yang dapat di unnggah  yaitu 5 terabyte.
+  Amazon S3 juga merupakan, (object-level storage) Penyimpanan tingkat objek*. Setiap objek terdiri dari: <br>
+data, metadata, dan kunci. <br>
+ <div class="fragment">
+  Ukuran Maximal dari  objek yang dapat di unggah  yaitu 5 terabyte.
   </div> <br>
   <div class="fragment">
   * Beberapa storage class atau penyimpanan amazon S3
