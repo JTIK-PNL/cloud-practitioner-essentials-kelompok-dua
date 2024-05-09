@@ -20,7 +20,7 @@ output:
 
 ## Pengantar Penyimpanan dan Database
 
-**Tujuan Pembelajaran**
+**TUJUAN PEMBELAJARAN**
 
 Pelajari modul agar dapat memahami bagaimana cara:
 
@@ -36,7 +36,7 @@ Pelajari modul agar dapat memahami bagaimana cara:
 7. Memaparkan manfaat Amazon DynamoDB.
 8. Menguraikan berbagai layanan database.
 
-**Pengenalan ke Penyimpanan dan Database**
+**PENGENALAN KE PENYIMPANAN DAN DATABASE**
 
 Ringkasannya, arsitektur kita telah berkembang menjadi elastis, diskalabel,tahan bencana, dan optimal secara biaya.Kita memiliki jaringan global yang aman dan dapat diprogram sepenuhnya.Dalam menghadapi pertumbuhan pelanggan, program loyalitas bisa menjadi
 
@@ -47,7 +47,59 @@ AWS menyediakan berbagai layanan yang cocok untuk membangun solusi data yang ses
 
 ---
 
-## instance store dan amazon electis block store (amazon EBS)
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Saat menjalankan aplikasi di AWS, tentunya aplikasi tersebut memerlukan akses ke CPU, memori, jaringan, dan penyimpanan. EC2 instance dapat memberikan akses ke semua komponennya. Untuk saat ini, pada penyimpanan.
+
+Ketika aplikasi berjalan di EC2 instance, membutuhkan akses ke block-level storage (penyimpanan tingkat blok).
+
+Istilah block-level storage adalah, sebagai tempat menyimpan file. File adalah serangkaian byte (bita) yang disimpan di dalam blok pada disk.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Pada saat file pada disk tersebut diperbarui, tidak akan menimpa seluruh rangkaian blok, melainkan memperbarui bagian yang berubah saja, dan penyimpanan untuk aplikasi (database, perangkat lunak perusahaan, atau sistem file) menjadi lebih efisien.
+
+Block-level storage dalam kasus ini adalah hard drive (cakram keras) di komputer. Namun EC2 instance juga memiliki hard drive dengan beberapa tipe yang berbeda.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+**INSTANCE STORE**
+
+Instance store (tempat penyimpanan instance) Merupakan penyimpanan block-level storage sementara pada Amazon EC2 instance, EC2 instance memiliki tipe instance nya sendiri, biasa sudah tersedia penyimpnan lokal atau instance store volume didalamnya.
+
+volume secara fisik terpasang ke host yaitu mesin fisik, tempat dimana EC2 instance berjalan. Dan dapat menulis data ke volume ini seperti halnya hard drive pada umumnya.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Sifat instance store volume hanya sementara, biasanya digunakan untuk penyimpanan data yang sering berubah, seperti cache, temporary file (file sementara), data yang dapat dibuat ulang dengan mudah, dan data lainnya. Tapi, jadi jangan menyimpan data penting ke dalam instance store volume.
+
+Solusi penyimpan data secara persisten dan berada di luar siklus hidup EC2 instance? Atau dengan kata lain, data tidak akan terhapus walau EC2 instance berhenti?. Yaitu dengan menggunakan layanan Amazon Elastic Block Store (Amazon EBS).
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+**AMAZON ELASTIC BLOCK STORE (AMAZON EBS)**
+
+Amazon Elastic Block Store (Amazon EBS) adalah layanan yang menyediakan block-level storage (penyimpanan tingkat blok) yang dapat Anda gunakan bersama dengan Amazon EC2 instance. Amazon EBS dapat membuat hard drive virtual (EBS volume) yang bisa di pasang ke EC2 instance. 
+
+EBS volume merupakan penyimpanan yang terpisah dari instance store volume, tidak terikat langsung ke host yang menjalankan EC2 instance.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Cara membuat EBS volume, hanya perlu menentukan konfigurasinya (seperti ukuran dan tipe) sesuai dengan kebutuhan. Jika sudah, dapat langsung memasangkannya ke Amazon EC2 instance. Pada saat dihentikan dan memulai EC2 instance, maka data yang di simpan pada EBS volume akan tetap ada. 
+
+Karena EBS volume digunakan untuk kebutuhan data yang persisten, maka penting melakukan backup (pencadangan) data.Serta dapat menjalankan incremental backup (pencadangan secara inkremental),
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+dari EBS volume dengan membuat Amazon EBS snapshot. Amazon EBS snapshot disimpan secara bertahap/inkremental. Pada saat pertama kali proses pencadangan dilakukan, semua data akan disalin yang ada di EBS volume. 
+
+Untuk pencadangan berikutnya, hanya menyimpan blok data yang berubah dari snapshot terakhir. Incremental backup berbeda dengan full backup.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Full backup akan menyalin semua data di dalam volume untuk setiap pencadangan, sementara incremental backup hanya mencadangkan data yang berubah (delta) dari pencadangan sebelumnya.
+
+Lakukan snapshot untuk EBS volume secara teratur. Dengan begitu, jika sebuah drive corrupted atau rusak, maka tidak akan kehilangan data, melainkan dapat memulihkannya dari snapshot.
 
 > 1. You want its return value.
 > 2. You want it to have **some other effect**.
