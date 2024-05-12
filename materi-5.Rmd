@@ -63,13 +63,12 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 > <div>penyimpanan Amazon S3 merupakan layanan untuk menyimpan dan mengambil data dalam jumlah besar dan tidak terbatas pada skala apapun </div>
 
 <div class="fragment">
-  Amazon S3 juga merupakan, (object-level storage) Penyimpanan tingkat objek*. Setiap objek terdiri dari: <br>
-data, metadata, dan kunci. <br>
- <div class="fragment">
-  Ukuran Maximal dari  objek yang dapat di unggah  yaitu 5 terabyte.
+  Amazon S3 juga merupakan, (object-level storage) Penyimpanan tingkat objek*. Setiap objek terdiri dari: <br> data, metadata, dan kunci.   <br>
+  <div class="fragment">
+    Ukuran Maximal dari  objek yang dapat di unggah  yaitu 5 terabyte.
   </div> <br>
   <div class="fragment">
-  * Beberapa storage class atau penyimpanan amazon S3
+   *Beberapa storage class atau penyimpanan amazon S3
   </div>
 </div>
 
@@ -85,7 +84,7 @@ Artinya: <br>
 > 3. <h4 class style=color:blue;> S3 Intelligent-Tiering </h4>
 <div class style=color:brown; >Pada penyimpanan S3 Intelligent-Tiering, Amazon S3 memantau pola akses objek. jika objek tidak di akses selama 30 hari, amazon S3 akan memindahkan secara otomatis ke standart-IA. <Br>
 
-## 
+##
 >4. <h3 class style=color:blue;>Glacier</h3>
 > <div bclass style=color:brown;>Sebagai penyipanan data audit, yang tidak memerlukan proses akses yang langsung pada saat itu.</div>
 <br>
@@ -93,13 +92,14 @@ kebijakan Lifecycle polices <br>
 Misalnya, Anda perlu menyimpan objek dalam S3 Standard selama 90 hari. Lalu, Anda ingin memindahkannya ke S3-IA selama 30 hari ke depan. Kemudian setelah total 120 hari, Anda ingin memindahkannya ke S3 Glacier.<br>
 hal ini diperlukan S3 Lifecycle Polices.
 
->5. <h3 class style=color:blue;>S3 Glacier Deep Archiver</h3> 
+>5. <h3 class style=color:blue;>S3 Glacier Deep Archiver</h3>
 Amazon Glacier Deep Archiver ini memerlukan waktu 12 hingga 48 jam.
 
 ## Kesimpulan Amazon S3
 
 <div class style=color:gold;>
-> Kesimpulannya, jika memiliki objek atau file yang lengkap yang hanya membutuhkan sesekali perubahan, maka pilihlah Amazon S3. Jika membutuhkan proses read (baca) data yang kompleks, maka perlu memilih Amazon EBS.
+> Kesimpulannya, jika memiliki objek atau file yang lengkap yang hanya membutuhkan sesekali perubahan, maka pilihlah Amazon S3. 
+Jika membutuhkan proses read (baca) data yang kompleks, maka perlu memilih Amazon EBS. 
 </div>
 >Jadi, memilih penyimpanan yang tepat itu tergantung pada kebutuhan beban kerja.Karena Setiap layanan merupakan solusi yang tepat untuk kebutuhan tertentu. Pahamilah apa yang dibutuhkan, maka akan tahu layanan mana yang ideal.
 
@@ -173,7 +173,6 @@ Ia adalah opsi database relasional kelas enterprise/perusahaan yang terkelola ol
 >- Menerapkan point-in-time recovery
 
 ## Amazon Dynamo DB
-
 ```r
 # Reading from disk
 readLines("data.csv")
