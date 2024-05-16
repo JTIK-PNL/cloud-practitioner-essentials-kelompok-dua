@@ -20,7 +20,7 @@ output:
 
 ## Pengantar Penyimpanan dan Database
 
-**Tujuan Pembelajaran**
+**TUJUAN PEMBELAJARAN**
 
 Pelajari modul agar dapat memahami bagaimana cara:
 
@@ -36,7 +36,7 @@ Pelajari modul agar dapat memahami bagaimana cara:
 7. Memaparkan manfaat Amazon DynamoDB.
 8. Menguraikan berbagai layanan database.
 
-**Pengenalan ke Penyimpanan dan Database**
+**PENGENALAN KE PENYIMPANAN DAN DATABASE**
 
 Ringkasannya, arsitektur kita telah berkembang menjadi elastis, diskalabel,tahan bencana, dan optimal secara biaya.Kita memiliki jaringan global yang aman dan dapat diprogram sepenuhnya.Dalam menghadapi pertumbuhan pelanggan, program loyalitas bisa menjadi
 
@@ -47,7 +47,59 @@ AWS menyediakan berbagai layanan yang cocok untuk membangun solusi data yang ses
 
 ---
 
-## instance store dan amazon electis block store (amazon EBS)
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Saat menjalankan aplikasi di AWS, tentunya aplikasi tersebut memerlukan akses ke CPU, memori, jaringan, dan penyimpanan. EC2 instance dapat memberikan akses ke semua komponennya. Untuk saat ini, pada penyimpanan.
+
+Ketika aplikasi berjalan di EC2 instance, membutuhkan akses ke block-level storage (penyimpanan tingkat blok).
+
+Istilah block-level storage adalah, sebagai tempat menyimpan file. File adalah serangkaian byte (bita) yang disimpan di dalam blok pada disk.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Pada saat file pada disk tersebut diperbarui, tidak akan menimpa seluruh rangkaian blok, melainkan memperbarui bagian yang berubah saja, dan penyimpanan untuk aplikasi (database, perangkat lunak perusahaan, atau sistem file) menjadi lebih efisien.
+
+Block-level storage dalam kasus ini adalah hard drive (cakram keras) di komputer. Namun EC2 instance juga memiliki hard drive dengan beberapa tipe yang berbeda.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+**INSTANCE STORE**
+
+Instance store (tempat penyimpanan instance) Merupakan penyimpanan block-level storage sementara pada Amazon EC2 instance, EC2 instance memiliki tipe instance nya sendiri, biasa sudah tersedia penyimpnan lokal atau instance store volume didalamnya.
+
+volume secara fisik terpasang ke host yaitu mesin fisik, tempat dimana EC2 instance berjalan. Dan dapat menulis data ke volume ini seperti halnya hard drive pada umumnya.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Sifat instance store volume hanya sementara, biasanya digunakan untuk penyimpanan data yang sering berubah, seperti cache, temporary file (file sementara), data yang dapat dibuat ulang dengan mudah, dan data lainnya. Tapi, jadi jangan menyimpan data penting ke dalam instance store volume.
+
+Solusi penyimpan data secara persisten dan berada di luar siklus hidup EC2 instance? Atau dengan kata lain, data tidak akan terhapus walau EC2 instance berhenti?. Yaitu dengan menggunakan layanan Amazon Elastic Block Store (Amazon EBS).
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+**AMAZON ELASTIC BLOCK STORE (AMAZON EBS)**
+
+Amazon Elastic Block Store (Amazon EBS) adalah layanan yang menyediakan block-level storage (penyimpanan tingkat blok) yang dapat Anda gunakan bersama dengan Amazon EC2 instance. Amazon EBS dapat membuat hard drive virtual (EBS volume) yang bisa di pasang ke EC2 instance. 
+
+EBS volume merupakan penyimpanan yang terpisah dari instance store volume, tidak terikat langsung ke host yang menjalankan EC2 instance.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Cara membuat EBS volume, hanya perlu menentukan konfigurasinya (seperti ukuran dan tipe) sesuai dengan kebutuhan. Jika sudah, dapat langsung memasangkannya ke Amazon EC2 instance. Pada saat dihentikan dan memulai EC2 instance, maka data yang di simpan pada EBS volume akan tetap ada. 
+
+Karena EBS volume digunakan untuk kebutuhan data yang persisten, maka penting melakukan backup (pencadangan) data.Serta dapat menjalankan incremental backup (pencadangan secara inkremental),
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+dari EBS volume dengan membuat Amazon EBS snapshot. Amazon EBS snapshot disimpan secara bertahap/inkremental. Pada saat pertama kali proses pencadangan dilakukan, semua data akan disalin yang ada di EBS volume. 
+
+Untuk pencadangan berikutnya, hanya menyimpan blok data yang berubah dari snapshot terakhir. Incremental backup berbeda dengan full backup.
+
+## Instance Store dan Amazon Elestis Block Store (Amazon EBS)
+
+Full backup akan menyalin semua data di dalam volume untuk setiap pencadangan, sementara incremental backup hanya mencadangkan data yang berubah (delta) dari pencadangan sebelumnya.
+
+Lakukan snapshot untuk EBS volume secara teratur. Dengan begitu, jika sebuah drive corrupted atau rusak, maka tidak akan kehilangan data, melainkan dapat memulihkannya dari snapshot.
 
 > 1. You want its return value.
 > 2. You want it to have **some other effect**.
@@ -75,14 +127,14 @@ These are (a bit misleadingly) called _side effects_. Any effect that is not the
 ## 
 >1. <h4 class style=color:blue;> S3 Standard </h4>
 <div class style="color: brown;">terdapat istilah daya 11 sembilan <br>
-Artinya: <br>
-99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun.</div>
+Artinya:
+99,999999999% probabilitas tetap utuh setelah jangka waktu 1 tahun. Memiliki ketersediaan tinggi, disimpam di 3 data center  </div>
 
 >2. <h4 class style=color:blue;> S3 Standard-interfrequent Access (S3 Standard-Ai) </h4>
-<div class style=color:brown;> Sebagai penyimpanan backup(cadangan), disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang. </div>
+<div class style=color:brown;> Sebagai penyimpanan backup, disaster recovery file(file pemulihan bencana) atau yang membutuhkan penyimpanan janga panjang. </div>
 
-> 3. <h4 class style=color:blue;> S3 Intelligent-Tiering </h4>
-<div class style=color:brown; >Pada penyimpanan S3 Intelligent-Tiering, Amazon S3 memantau pola akses objek. jika objek tidak di akses selama 30 hari, amazon S3 akan memindahkan secara otomatis ke standart-IA. <Br>
+> 3. <h3 class style=color:blue;> S3 Intelligent-Tiering </h3>
+<div class style=color:brown; >Pada penyimpanan S3 Intelligent-Tiering, Amazon S3 memantau akses objek.jika objek tidak di akses 30 hari, amazon S3 akan secara otomatis memindahkan ke standart-IA. <Br>
 
 ##
 >4. <h3 class style=color:blue;>Glacier</h3>
@@ -172,27 +224,120 @@ Ia adalah opsi database relasional kelas enterprise/perusahaan yang terkelola ol
 >- Mencadangkan secara berkelanjutan ke Amazon S3.
 >- Menerapkan point-in-time recovery
 
+<<<<<<< HEAD
 ## Amazon Dynamo DB
 ```r
 # Reading from disk
 readLines("data.csv")
+=======
+## <class style="color:black;">Amazon DynamoDB
 
-# Making HTTP GET requests
-httr.GET("https://api.example.com/data.json")
+<p style="text-align:justify; font-size:85%;">
+Database relasional seperti **MySQL** memerlukan skema yang
+terdefinisi dengan baik sebelum Anda dapat menggunakan SQL untuk
+mengambil data. Skema ini biasanya terdiri dari satu atau lebih tabel
+yang memiliki hubungan satu sama lain. Setelah skema telah
+didefinisikan, Anda dapat menggunakan SQL untuk melakukan kueri terhadap
+data.</p>
+>>>>>>> 04b87ea554bf851642eeefb5e3006b4e68fdb053
 
-# Reading global variables
-.Random.seed
+<p style="text-align:justify; font-size:85%;">
+Database relasional, meskipun umum, dapat mengalami masalah scaling dan
+kinerja saat ditekan. Skema yang tetap juga dapat membatasi
+fleksibilitas dalam jenis data. Jadi, untuk kebutuhan data fleksibel dan
+akses cepat, database relasional seperti **MySQL** tidak
+selalu optimal.</p>
 
-# Modifying the random seed... ehhhhhh...
-runif(10)
-```
+##
+<p style="text-align:justify; font-size:85%;">
+**Amazon DynamoDB** adalah database NoSQL yang menggunakan
+pendekatan pasangan kunci-nilai. Dalam DynamoDB, Anda dapat membuat
+tabel untuk menyimpan dan mengambil data. Karena kueri dalam database
+nonrelasional lebih sederhana, memungkinkan fokus pada kumpulan item
+dari satu tabel, tanpa perlu mengelola kueri dari berbagai tabel.</p>
+<p>
+<div class="fragment">
+<p style="text-align:center;font-size:85%;">
+**Contoh sederhana tabel database nonrelasional**</p>
 
+<table style="width:50%">
+  <tr>
+    <th style="text-align:center;">Key</th>
+    <th style="text-align:center;">Value</th>
+  </tr>
+  <tr>
+    <td rowspan="3" style="text-align:center;">1</td>
+    <td>**Nama**: Budi</td>
+  </tr>
+  <tr>
+    <td>**Alamat**: Kenanga 123</td>
+  </tr>
+  <tr>
+    <td>**Minuman favorit**: Kopi gula aren</td>
+  </tr>
+  <tr>
+    <td rowspan="3" style="text-align:center;">2</td>
+    <td>**Nama**: Siska</td>
+  </tr>
+  <tr>
+    <td>**Alamat**: Mawar 321</td>
+  </tr>
+  <tr>
+    <td>**Tanggal Lahir**: 5 Juli 1994</td>
+  </tr>
+</table>
 
+##
+<p style="text-align:justify; font-size:85%;">
+Karena **Amazon DynamoDB** adalah database NoSQL alias
+nonrelasional, ia sangat ideal untuk kasus penggunaan tertentu, bukan
+untuk semua beban kerja.</p>
 
-If executing your function/expression **leaves the state of the world a little different** than before it executed, **it has side effects**.
+<p style="text-align:justify; font-size:85%;">
+Salah satu contoh penggunaan **DynamoDB** yang luar biasa
+adalah pada saat **Amazon Prime Day** pada tahun 2019.
+Prime Day adalah acara belanja tahunan eksklusif untuk anggota Amazon
+Prime. Selama 48 jam Prime Day, ada 7,11 triliun panggilan ke API
+**DynamoDB**, puncaknya bahkan ada pada 45,4 juta
+permintaan per detik.</p>
 
-But if "what happens in `func`, stays in `func`" (besides the return value), then it doesn't have side effects.
+<p><img src="https://d.newsweek.com/en/full/1511181/amazon-prime-day-deals-2019-saving-discounts-coupons.webp?w=790&f=1cc60f178378c8d5b42d605bbaf61338" alt="newsweek.com" width="300" height="180" style="display:block; margin:auto;"/>
+<p style="text-align:center; font-size:50%;">©Newsweek.com</p>
 
+##
+<p style="text-align:center; font-size:85%;">
+**Kapan kita harus menggunakan Amazon RDS dan Amazon DynamoDB?**
+<div class="fragment">
+
+<table style="width:100%">
+  <tr>
+    <th style="text-align:center;">Amazon RDS</th>
+    <th style="text-align:center;">Amazon DynamoDB</th>
+  </tr>
+  <tr>
+    <td>Dirancang untuk mengurangi kerumitan administrator sambil memberikan
+ketersediaan tinggi pada pemulihan database.</td>
+    <td>Menggunakan pasangan key-value tanpa memerlukan skema rumit dan dapat
+dioperasikan sebagai database global hanya dengan satu klik.</td>
+  </tr>
+  <tr>
+    <td>Anda dapat mengontrol data, skema, dan jaringan.</td>
+    <td>Menawarkan throughput tinggi, dapat menskalakan hingga petabyte, dan
+menyediakan akses API yang detail.</td>
+  </tr>
+  <tr>
+    <td>Mampu membangun sistem analisis data yang kompleks.</td>
+    <td>Memungkinkan Anda membangun database yang kuat dan sangat cepat tanpa
+memerlukan fungsionalitas yang rumit.</td>
+  </tr>
+  <tr>
+    <td>Ideal untuk analisis sistem manajemen supply chain (rantai pasokan).</td>
+    <td>Cocok untuk data sederhana seperti daftar kontak karyawan dengan informasi dasar seperti nama, nomor telepon, email, dan ID karyawan, dsb.</td>
+  </tr>
+</table>
+
+<p style="text-align:center; font-size:50%;">
+Perbandingan layanan antara Amazon RDS dengan Amazon DynamoDB</p>
 
 
 ## Amazon Redshift
