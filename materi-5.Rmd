@@ -364,6 +364,37 @@ Semua detail teknis dan kompleksitas proses migrasi ditangani oleh AWS DMS.
 
 ## Layanan Database Tambahan
 
+Layanan database tambahan adalah berbagai layanan yang disediakan oleh AWS untuk menangani kebutuhan spesifik yang tidak dapat dipenuhi oleh database tradisional atau umum. Setiap layanan ini dirancang dengan fitur dan kemampuan khusus yang memungkinkan pengelolaan jenis data tertentu dengan lebih efisien dan efektif. Berikut adalah penjelasan singkat dari beberapa layanan tersebut:
+
+## ..
+
+Amazon DocumentDB: Layanan database dokumen yang kompatibel dengan MongoDB, dirancang untuk manajemen konten, katalog, dan profil pengguna, memungkinkan penyimpanan dan pengambilan dokumen JSON dengan skala besar dan performa tinggi.
+
+## ..
+
+Amazon Neptune: Layanan graph database yang optimal untuk aplikasi yang melibatkan data yang sangat terhubung, seperti jejaring sosial, mesin rekomendasi, dan deteksi penipuan. Neptune memungkinkan pemodelan dan kueri data dengan relasi kompleks secara efisien.
+
+## ..
+
+Amazon Managed Blockchain: Layanan untuk membuat dan mengelola jaringan blockchain menggunakan framework open-source. Cocok untuk aplikasi yang membutuhkan catatan transaksi terdesentralisasi dan aman, seperti supply chain dan catatan finansial.
+
+## ..
+
+Amazon Quantum Ledger Database (QLDB): Sistem pencatatan yang immutable dengan log transaksi yang terpusat dan dapat diverifikasi secara kriptografi. Ideal untuk aplikasi yang memerlukan audit dan pencatatan permanen yang tidak dapat diubah.
+
+## ..
+
+Selain itu, AWS menyediakan layanan akselerator untuk meningkatkan performa database:
+
+Amazon ElastiCache: Layanan cache yang mendukung Redis dan Memcached, yang berfungsi untuk meningkatkan kecepatan read time untuk permintaan data umum dengan menambahkan lapisan cache pada database.
+
+Amazon DynamoDB Accelerator (DAX): Native caching layer untuk Amazon DynamoDB yang dirancang untuk meningkatkan kecepatan read time untuk data nonrelasional, memberikan latensi baca yang sangat rendah.
+
+Secara keseluruhan, layanan database tambahan ini membantu pengguna AWS memilih solusi database yang paling sesuai dengan kebutuhan spesifik mereka, memastikan performa optimal dan efisiensi dalam pengelolaan data.
+
+
+## ..
+
 ```r
 function(values) {
   globalenv()$values <- values
