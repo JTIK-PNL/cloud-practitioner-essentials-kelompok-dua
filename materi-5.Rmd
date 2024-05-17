@@ -341,8 +341,15 @@ For each function, write Yes if it has side effects, and No if not.
 
 ## AWS Database Migration Service
 
+AWS Database Migration Service (AWS DMS) adalah layanan dari Amazon Web Services yang membantu kita memindahkan database dari tempat asalnya, seperti server lokal (on-premise) atau platform lain, ke lingkungan AWS dengan mudah dan aman. Proses migrasi ini tidak mengganggu operasi normal dari database asal, sehingga aplikasi yang bergantung pada database tersebut tetap bisa berjalan tanpa masalah selama migrasi
+
+## ..
+
 AWS Database Migration Service (AWS DMS) memungkinkan pengguna untuk memindahkan database ke lingkungan AWS dengan mudah dan aman.
-Migrasi dapat dilakukan dalam dua jenis: homogen, di mana database sumber dan target memiliki struktur yang sama, dan heterogen, di mana terdapat perbedaan dalam struktur skema, tipe data, atau kode database.
+Migrasi dapat dilakukan dalam dua jenis, homogen: di mana database sumber dan target memiliki struktur yang sama, dan heterogen: di mana terdapat perbedaan dalam struktur skema, tipe data, atau kode database.
+
+## ..
+
 AWS DMS juga digunakan untuk migrasi ke lingkungan pengembangan atau pengujian, konsolidasi database, dan replikasi data untuk pemulihan bencana atau pemisahan geografis.
 Proses migrasi dengan AWS DMS dilakukan dengan membuat tugas migrasi, mengoneksikannya ke database sumber dan target, dan memulai proses migrasi dengan beberapa klik saja.
 Semua detail teknis dan kompleksitas proses migrasi ditangani oleh AWS DMS.
