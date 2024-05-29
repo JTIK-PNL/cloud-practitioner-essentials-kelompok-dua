@@ -44,93 +44,62 @@ Operational Excellence (Keunggulan Operasional), Security (Keamanan), Reliabilit
 
 ---
 
-> 1. You want its return value.
-> 2. You want it to have **some other effect**.
 
-<div class="fragment">
-These are (a bit misleadingly) called _side effects_. Any effect that is not the return value is a side effect.
+## AWS Well-Architected Framework
+
+AWS Well-Architected Framework dirancang untuk membantu memahami cara merancang dan mengoperasikan sistem yang andal, aman, efisien, dan hemat biaya di AWS Cloud. AWS Well-Architected Framework terdiri dari 5 pilar 
+
+1. Operational Excellence (Keunggulan Operasional)
+
+Berguna menjalankan dan memantau sistem untuk memberikan nilai bisnis serta terus meningkatkan proses dan prosedur. Pilar Operational Excellence mencakup bagaimana organisasi  mendukung tujuan bisnis, kemampuan untuk menjalankan beban secara efektif.
+
+
+## 
+<div>
+- Contohnya, melakukan operation as code (operasi sebagai kode), membuat anotasi dokumentasi, mengantisipasi kegagalan, dan sering memperbaiki prosedur operasi.
+
+<br>
+2. Security (Keamanan)
+
+keamanan adalah prioritas utama AWS. Pilar ini melindungi informasi, sistem, dan aset Anda sekaligus memberikan nilai bisnis melalui risk assessment (penilaian risiko) dan strategi mitigasi.
 </div>
 
 
+## 
 
-## Functions with side effects
+<div>
 
-```r
-write.csv(...)
+3. Reliability (Keandalan)
 
-plot(cars)
+mencakup kemampuan sistem untuk memastikan beban kerja melakukan fungsi dengan benar dan konsisten sesuai harapan.
 
-print(x)
+contohnya seperti :
+<br>
 
-httr.POST(...)
+- Pemulihan otomatis dari kegagalan infrastruktur atau layanan.
+- Horizontal scaling--telah dibahas pada Modul Komputasi di Cloud--untuk meningkatkan ketersediaan beban kerja.
+- Pengujian prosedur pemulihan.
 
-alarm()
-```
-
-
-
-## More side effects
-
-```r
-# Sets a variable in a parent environment
-value <<- 10
-
-# Loads into global env by default
-source("functions.R")
-
-# Modifies the global search list
-library(dplyr)
-
-# Only if foo is an env, ref class, or R6
-foo$bar <- TRUE
-```
+</div>
 
 
+## 
 
-## NOT side effects (when inside a function)
+<div>
+4. Performance Efficiency (Efisiensi Kinerja)
 
-```r
-# Modifying *local* variables
-value <- 10
+Pilar ini berfokus pada penggunaan sumber daya IT dan komputasi secara efisien untuk memenuhi kebutuhan.
 
-# Creating most kinds of objects
-list(a = 1, b = 2)
+Misalnya, menggunakan arsitektur serverless (tanpa server), melakukan eksperimen, dan merancang sistem agar dapat mendunia dalam hitungan menit.
 
-# Data frames are pass-by-value in R so this is OK
-dataset <- dataset %>% filter(count > 3)
+<br>
 
-# Most calculations
-a + 1
-summary(pressure)
-lm(speed ~ dist, data = cars)
-predict(wfit, interval = "prediction")
-```
+5.Cost Optimization (Pengoptimalan Biaya) 
 
-
-
-## Ehhh... Not side effects
-
-```r
-# Reading from disk
-readLines("data.csv")
-
-# Making HTTP GET requests
-httr.GET("https://api.example.com/data.json")
-
-# Reading global variables
-.Random.seed
-
-# Modifying the random seed... ehhhhhh...
-runif(10)
-```
-
-
-
-If executing your function/expression **leaves the state of the world a little different** than before it executed, **it has side effects**.
-
-But if "what happens in `func`, stays in `func`" (besides the return value), then it doesn't have side effects.
-
-
+Pilar ini berfokus untuk mengontrol arah uang dibelanjakan guna menghindari biaya yang tak perlu.
+contoh: 
+menerapkan manajemen keuangan cloud, menganalisis pengeluaran, dan menggunakan managed service (layanan terkelola) untuk mengurangi biaya kepemilikan.
+</div>
 
 ## Side effect quiz
 
