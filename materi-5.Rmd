@@ -224,12 +224,6 @@ Ia adalah opsi database relasional kelas enterprise/perusahaan yang terkelola ol
 >- Mencadangkan secara berkelanjutan ke Amazon S3.
 >- Menerapkan point-in-time recovery
 
-<<<<<<< HEAD
-## Amazon Dynamo DB
-```r
-# Reading from disk
-readLines("data.csv")
-=======
 ## <class style="color:black;">Amazon DynamoDB
 
 <p style="text-align:justify; font-size:85%;">
@@ -239,8 +233,8 @@ mengambil data. Skema ini biasanya terdiri dari satu atau lebih tabel
 yang memiliki hubungan satu sama lain. Setelah skema telah
 didefinisikan, Anda dapat menggunakan SQL untuk melakukan kueri terhadap
 data.</p>
->>>>>>> 04b87ea554bf851642eeefb5e3006b4e68fdb053
 
+<div class="fragment">
 <p style="text-align:justify; font-size:85%;">
 Database relasional, meskipun umum, dapat mengalami masalah scaling dan
 kinerja saat ditekan. Skema yang tetap juga dapat membatasi
@@ -340,10 +334,35 @@ memerlukan fungsionalitas yang rumit.</td>
 Perbandingan layanan antara Amazon RDS dengan Amazon DynamoDB</p>
 
 
-## Amazon Redshift
+## <class style="color:black;">Amazon Redshift
+<div class="fragment"> <p style="text-align:center">
+**Mengapa Database Relasional Tidak Cukup?**</p>
 
-For each function, write Yes if it has side effects, and No if not.
+>1. Database relasional ideal untuk operasi read/write real-time.
+>2. Masalah muncul saat digunakan untuk analisis historis dan data besar.
+>3. Volume data modern dapat membanjiri database relasional.
+>4. Data yang bervariasi sulit ditangani dengan satu kueri untuk beberapa database.
 
+##
+<p style="text-align:center">
+**APA ITU AMAZON REDSHIFT?**</p>
+<div class="fragment"> <p style="text-align:justify; font-size:85%;">
+Amazon Redshift adalah layanan data warehousing yang dirancang untuk analitik big data. Redshift memungkinkan Anda mengumpulkan data dari banyak sumber untuk memahami hubungan dan tren dalam data Anda. Dengan kemampuan untuk diskalakan hingga ukuran petabyte, Redshift nodes bekerja sama dengan Amazon Redshift Spectrum, memungkinkan Anda menjalankan kueri SQL pada exabyte data tidak terstruktur di data lake. Kinerjanya bisa mencapai hingga 10 kali lebih tinggi dibandingkan database tradisional untuk beban kerja business intelligence.</p>
+<div class="fragment"> <p style="text-align:justify; font-size:85%;">
+**Trus, Keuntungannya Apa?**</p>
+<div class="fragment"> <p style="text-align:justify; font-size:85%;">
+Amazon Redshift memudahkan Anda memulai analitik big data hanya dengan satu panggilan API, mengurangi waktu menunggu hasil dan memberi Anda lebih banyak waktu untuk mendapatkan jawaban yang dibutuhkan.</p>
+
+##
+<p style="text-align:center;">
+**CONTOH**</p>
+<div class="fragment">
+**Analitik Historis:**<br>
+Pertanyaan seperti, "Tunjukkan angka penjualan satu jam terakhir di semua toko", membutuhkan data yang sudah terjadi sebelumnya dan tidak akan berubah lagi.<br>
+
+<div class="fragment">
+**Analisis Operasional:**<br>
+Pertanyaan seperti, "Berapa kantong kopi yang masih ada di inventaris kita sekarang?" melibatkan data yang terus berubah.</p>
 
 
 ## AWS Database Migration Service
