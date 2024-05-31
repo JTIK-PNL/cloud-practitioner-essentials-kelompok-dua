@@ -18,12 +18,11 @@ output:
     incremental: false
 ---
 
-## Pengantar Perjalanan Cloud
+## Pengantar Migrasi dan Inovasi
 
-mempelajari beberapa materi, di antaranya:
 
-1. Lima pilar Well-Architected Framework.
 
+<<<<<<< HEAD
 2. Enam manfaat komputasi cloud.
 
 **Pengenalan ke Perjalanan Cloud**
@@ -51,6 +50,8 @@ Operational Excellence (Keunggulan Operasional), Security (Keamanan), Reliabilit
 Anda seharusnya sekarang telah memiliki pemahaman tentang bermacam layanan yang ditawarkan AWS dan bagaimana menggunakannya secara bersamaan. Sehingga, Anda dapat membangun solusi yang fleksibel dan andal untuk bisnis.
 
 ---
+=======
+>>>>>>> 8e641bd058ba308de54f698a815b0f589b773917
 
 <<<<<<< HEAD
 ## Manfaat dari AWS Cloud
@@ -126,7 +127,7 @@ contoh:
 menerapkan manajemen keuangan cloud, menganalisis pengeluaran, dan menggunakan managed service (layanan terkelola) untuk mengurangi biaya kepemilikan.
 </div>
 
-## Manfaat dari Aws Cloud
+## Strategi Migrasi
 
 Setelah mempelajari beberapa materi sebelumnya, kita telah memeliki beberapa wawasan akan AWS,antara lain sebagai berikut:
 
@@ -135,7 +136,7 @@ Setelah mempelajari beberapa materi sebelumnya, kita telah memeliki beberapa waw
 >3. Enam manfaat utama menggunakan AWS Cloud
 
 
-## ENAM MANFAAT UTAMA MENGGUNAKAN AWS CLOUD
+## AWA Snow Family
 
 >1. Mengubah pengeluaran di muka menjadi pengeluaran variabel
 
@@ -151,4 +152,4 @@ Setelah mempelajari beberapa materi sebelumnya, kita telah memeliki beberapa waw
 
 
 
-## Thankyou
+## Inovasi dengan AWS
