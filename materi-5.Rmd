@@ -5,7 +5,7 @@ author: "Anggota Kelompok
         <br>-Bayu Angkasa Putra
         <br>-Muhammad Al Fatih
         <br>-Fairuz Azzahira
-        <br>-Syarifa Rizkyna"
+        <br>-Syarifah Rizkyna"
 date: "2024"
 output:
   revealjs::revealjs_presentation:
@@ -149,7 +149,7 @@ Jika membutuhkan proses read (baca) data yang kompleks, maka perlu memilih Amazo
 
 ## Amazon Elastic File System (Amazon EFS)
 
-<<<<<<< HEAD
+
 sekarang kita akan membahas tentang layanan file storage alias penyimpanan file, yang berarti beberapa client--pengguna, aplikasi, server, dsb--dapat mengakses data yang disimpan di folder file secara bersamaan, menggunakan block storage dengan block storage dengan sistem file lokal. 
 
 Dibandingkan dengan block storage dan object storage, file storage ini sangat ideal untuk kasus penggunaan di mana beberapa layanan dan sumber daya perlu mengakses data yang sama pada waktu yang sama.
@@ -171,6 +171,7 @@ EFS
 >4. Dapat diakses oleh beberapa EC2 instance di seluruh Region.
 
 ##
+
 EBS
 
 >1. Hard drive virtual.
@@ -178,28 +179,7 @@ EBS
 >3. Data disimpan di satu AZ.
 >4. Hanya bisa diakses oleh EC2 instance di AZ yang sama.
 >5. Tidak melakukan scaling otomatis.
-=======
-Layanan File Storage:
 
-File storage memungkinkan banyak client (pengguna, aplikasi, server) mengakses data yang sama secara bersamaan melalui file path.
-Ideal untuk situasi di mana beberapa layanan membutuhkan akses simultan ke data yang sama.
-Amazon Elastic File System (EFS):
-
-EFS adalah sistem file terkelola yang skalabel untuk AWS Cloud dan data center on-premise.
-EFS menghilangkan kebutuhan pengelolaan kapasitas penyimpanan, pencadangan, dan replikasi data secara manual.
-Keuntungan EFS:
-
-##
-
-Beberapa instance dapat mengakses data secara bersamaan.
-EFS otomatis melakukan scaling up dan scaling down sesuai kebutuhan.
-Data disimpan di beberapa Availability Zone (AZ) dalam satu region, memastikan redundansi dan ketersediaan.
-Perbandingan dengan Amazon EBS:
->>>>>>> 8d688ce74027165ffa325289fc4cbc27c44821c2
-
-Amazon EBS adalah volume penyimpanan yang dilampirkan ke satu EC2 instance dan terbatas pada satu AZ.
-EBS tidak melakukan scaling otomatis dan data tidak direplikasi di beberapa AZ.
-EFS, sebagai sistem file regional, mendukung akses bersamaan dari banyak
 
 ## Amazon Relational Database Service (Amazon RDS)
 
