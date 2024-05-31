@@ -1,5 +1,5 @@
 ---
-title: "Perjalanan Cloud"
+title: "Migrasi dan Inovasi"
 author: "Anggota Kelompok
         <br>-Al Nazirul Mubin
         <br>-Bayu Angkasa Putra
@@ -20,11 +20,35 @@ output:
 
 ## Pengantar Migrasi dan Inovasi
 
+<<<<<<< HEAD
 Setelah kita belajar beberapa kerangka kerja yang dapat membantu Anda dalam mempersiapkan proses migrasi ke AWS, sekarang mari kita lihat bagaimana cara implementasinya
+=======
+**Tujuan Pembelajaran**
+
+>1. Migrasi dan inovasi di AWS Cloud.
+
+>2. AWS Cloud Adoption Framework (AWS CAF).
+
+>3. Enam faktor utama dari strategi migrasi cloud.
+
+>4. Manfaat dari solusi migrasi data AWS, seperti AWS Snowcone, AWS Snowball, dan AWS Snowmobile.
+
+>5. Cakupan luas dari solusi inovatif yang ditawarkan AWS.
+>>>>>>> f4514bd60c2547b8a65c918d3b3398eed513cd03
 
 Proses migrasi tak terjadi hanya dengan menjentikkan jari lalu seketika semua elemen dari data center on-premise berjalan di AWS.
 
+<<<<<<< HEAD
 Setiap aplikasi yang berarsitektur tightly coupled  yang telah di bahas di Modul sebelumnya memiliki 6 kemungkinan opsi terkait strategi migrasi, AWS menyebutnya dengan 6 R.
+=======
+## Pengantar Migrasi dan Inovasi
+
+**Pengenalan ke Migrasi dan Inovasi**
+
+AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan beban kerja dari pusat data on-premise ke AWS Cloud. Beberapa layanan migrasi yang disediakan oleh AWS antara lain:
+
+>1. AWS Server Migration Service (SMS): Layanan ini memungkinkan Anda untuk mengotomatiskan proses migrasi beban kerja yang berjalan di server fisik, virtual, atau cloud lain ke AWS. Layanan ini dapat membantu Anda dalam mengurangi downtime dan kompleksitas migrasi.
+>>>>>>> f4514bd60c2547b8a65c918d3b3398eed513cd03
 
 ## Rehosting
 
@@ -46,6 +70,12 @@ Saat hendak melakukan migrasi ke AWS, mungkin Anda memiliki beberapa aplikasi ya
 
 Nah, daripada memindahkan aplikasi tersebut ke AWS, sebaiknya Anda hanya memigrasikan aplikasi yang sekiranya masuk akal dan berguna untuk bisnis
 
+## Pengantar Migrasi dan Inovasi
+
+>2. AWS Database Migration Service (DMS): Layanan ini memungkinkan Anda untuk memigrasikan database yang berjalan di berbagai platform ke AWS. DMS mendukung migrasi antara berbagai jenis database, termasuk Oracle, MySQL, PostgreSQL, dan SQL Server.
+
+
+>3. AWS Snow Family: AWS Snow Family adalah serangkaian perangkat fisik yang dirancang untuk memindahkan data dalam skala besar ke dan dari AWS. Perangkat-perangkat ini dapat digunakan untuk memindahkan data yang sangat besar atau dalam kasus-kasus di mana koneksi internet yang cepat tidak tersedia.
 
 ## AWS Well-Architected Framework
 
