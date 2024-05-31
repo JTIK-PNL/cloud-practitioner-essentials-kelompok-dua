@@ -22,54 +22,8 @@ output:
 
 
 
-<<<<<<< HEAD
-2. Enam manfaat komputasi cloud.
-
-**Pengenalan ke Perjalanan Cloud**
-
-three-tier architecture atau arsitektur tiga tingkat. Memiliki load balancer, instance, dan database.
-
-“Bagaimana jika Availability Zone (AZ) yang menopang aplikasi Anda mengalami masalah?”
-
----
-
-**Pengenalan ke Perjalanan Cloud**
-
-AWS menghadirkan alat yang dapat membantu untuk membuat arsitektur terbaik, yakni AWS Well-Architected Framework.
-
-AWS Well-Architected Framework adalah layanan untuk mengevaluasi arsitektur yang di bangun terhadap keunggulan pada beberapa kategori atau disebut dengan pilar, di antaranya:
-
-Operational Excellence (Keunggulan Operasional), Security (Keamanan), Reliability (Keandalan), Performance Efficiency (Efisiensi Kinerja), Cost Optimization (Pengoptimalan Biaya).
----
-
-## AWS Well-Architected Framework
-**About AWS**
-
-1. Layanan AWS
-
-Anda seharusnya sekarang telah memiliki pemahaman tentang bermacam layanan yang ditawarkan AWS dan bagaimana menggunakannya secara bersamaan. Sehingga, Anda dapat membangun solusi yang fleksibel dan andal untuk bisnis.
-
----
-=======
->>>>>>> 8e641bd058ba308de54f698a815b0f589b773917
-
-<<<<<<< HEAD
-## Manfaat dari AWS Cloud
 
 
----
-
-## Kesimpulan
-
-
----
-
-
-Functions can be executed for one or both of the following reasons:
-> 1. You want its return value.
-> 2. You want it to have **some other effect**.
-=======
->>>>>>> 72908121485c2b7583267c3d882f8f784cf7e821
 
 ## AWS Well-Architected Framework
 
