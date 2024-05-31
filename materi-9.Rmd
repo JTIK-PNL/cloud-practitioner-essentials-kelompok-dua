@@ -20,6 +20,9 @@ output:
 
 ## Pengantar Migrasi dan Inovasi
 
+<<<<<<< HEAD
+Setelah kita belajar beberapa kerangka kerja yang dapat membantu Anda dalam mempersiapkan proses migrasi ke AWS, sekarang mari kita lihat bagaimana cara implementasinya
+=======
 **Tujuan Pembelajaran**
 
 >1. Migrasi dan inovasi di AWS Cloud.
@@ -31,8 +34,13 @@ output:
 >4. Manfaat dari solusi migrasi data AWS, seperti AWS Snowcone, AWS Snowball, dan AWS Snowmobile.
 
 >5. Cakupan luas dari solusi inovatif yang ditawarkan AWS.
+>>>>>>> f4514bd60c2547b8a65c918d3b3398eed513cd03
 
+Proses migrasi tak terjadi hanya dengan menjentikkan jari lalu seketika semua elemen dari data center on-premise berjalan di AWS.
 
+<<<<<<< HEAD
+Setiap aplikasi yang berarsitektur tightly coupled  yang telah di bahas di Modul sebelumnya memiliki 6 kemungkinan opsi terkait strategi migrasi, AWS menyebutnya dengan 6 R.
+=======
 ## Pengantar Migrasi dan Inovasi
 
 **Pengenalan ke Migrasi dan Inovasi**
@@ -40,7 +48,27 @@ output:
 AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan beban kerja dari pusat data on-premise ke AWS Cloud. Beberapa layanan migrasi yang disediakan oleh AWS antara lain:
 
 >1. AWS Server Migration Service (SMS): Layanan ini memungkinkan Anda untuk mengotomatiskan proses migrasi beban kerja yang berjalan di server fisik, virtual, atau cloud lain ke AWS. Layanan ini dapat membantu Anda dalam mengurangi downtime dan kompleksitas migrasi.
+>>>>>>> f4514bd60c2547b8a65c918d3b3398eed513cd03
 
+## Rehosting
+
+Rehosting juga dikenal sebagai lift and shift (angkat dan pindahkan). Opsi ini mudah dilakukan karena Anda tak perlu membuat perubahan apa pun. Cukup pindahkan aplikasi yang Anda miliki ke AWS.
+Dengan rehosting, Anda bisa menghemat hingga 30% dari total biaya walaupun tidak ada pengoptimalan apa pun pada aplikasi Anda.
+
+## Replatforming
+
+Strategi migrasi yang satu ini disebut juga dengan lift, tinker, and shift (angkat, perbaiki, dan pindahkan). Pada dasarnya, opsi ini masih berupa lift and shift namun Anda dapat melakukan beberapa pengoptimalan cloud. Dalam strategi ini, Anda tak akan mengubah arsitektur inti (core architecture) apa pun pada proses migrasi aplikasi.
+
+## Retiring
+
+AWS menemukan bahwa sebanyak 10% hingga 20% dari portofolio IT perusahaan menyertakan aplikasi yang tak lagi digunakan dan bisa dimatikan.
+Menghapus aplikasi yang tidak lagi digunakan, menghemat biaya dan memfokuskan tim pada aplikasi yang aktif digunakan.
+
+## Retaining
+
+Saat hendak melakukan migrasi ke AWS, mungkin Anda memiliki beberapa aplikasi yang akan segera deprecated (dihentikan). Tetapi, aplikasi tersebut masih perlu digunakan selama beberapa waktu.
+
+Nah, daripada memindahkan aplikasi tersebut ke AWS, sebaiknya Anda hanya memigrasikan aplikasi yang sekiranya masuk akal dan berguna untuk bisnis
 
 ## Pengantar Migrasi dan Inovasi
 
