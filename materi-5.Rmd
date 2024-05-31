@@ -157,20 +157,34 @@ Jika membutuhkan proses read (baca) data yang kompleks, maka perlu memilih Amazo
 
 ## Amazon Elastic File System (Amazon EFS)
 
-```r
-# Sets a variable in a parent environment
-value <<- 10
+sekarang kita akan membahas tentang layanan file storage alias penyimpanan file, yang berarti beberapa client--pengguna, aplikasi, server, dsb--dapat mengakses data yang disimpan di folder file secara bersamaan, menggunakan block storage dengan block storage dengan sistem file lokal. 
 
-# Loads into global env by default
-source("functions.R")
+Dibandingkan dengan block storage dan object storage, file storage ini sangat ideal untuk kasus penggunaan di mana beberapa layanan dan sumber daya perlu mengakses data yang sama pada waktu yang sama.
 
-# Modifies the global search list
-library(dplyr)
+Layanan AWS yang termasuk ke dalamnya adalah Amazon Elastic File System, atau juga disebut dengan EFS.
 
-# Only if foo is an env, ref class, or R6
-foo$bar <- TRUE
-```
+## 
+Amazon EFS adalah sistem file terkelola yang bisa diskalakan dan dapat digunakan oleh layanan AWS Cloud dan sumber daya di data center on-premise.
 
+Perusahaan sering berbagi sistem file untuk aplikasi mereka, yang memerlukan kapasitas penyimpanan yang sesuai, pencadangan, redundansi, dan manajemen server. AWS EFS mengelola semua itu, melakukan scaling dan replikasi otomatis. EFS memungkinkan beberapa instance mengakses data secara bersamaan dan secara otomatis menskalakan kapasitas hingga petabyte tanpa mengganggu aplikasi.
+
+## Perbedaan utama antara Amazon EFS dan Amazon EBS
+
+EFS
+
+>1. Sistem file untuk Linux.
+>2. Sumber daya tingkat regional.
+>3. Data disimpan di beberapa Availability Zone (AZ).
+>4. Dapat diakses oleh beberapa EC2 instance di seluruh Region.
+
+##
+EBS
+
+>1. Hard drive virtual.
+>2. Sumber daya tingkat Availability Zone.
+>3. Data disimpan di satu AZ.
+>4. Hanya bisa diakses oleh EC2 instance di AZ yang sama.
+>5. Tidak melakukan scaling otomatis.
 
 
 ## Amazon Relational Database Service (Amazon RDS)
