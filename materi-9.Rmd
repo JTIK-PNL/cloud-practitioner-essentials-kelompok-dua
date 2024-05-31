@@ -20,9 +20,31 @@ output:
 
 ## Pengantar Migrasi dan Inovasi
 
+Setelah kita belajar beberapa kerangka kerja yang dapat membantu Anda dalam mempersiapkan proses migrasi ke AWS, sekarang mari kita lihat bagaimana cara implementasinya
 
+Proses migrasi tak terjadi hanya dengan menjentikkan jari lalu seketika semua elemen dari data center on-premise berjalan di AWS.
 
+Setiap aplikasi yang berarsitektur tightly coupled  yang telah di bahas di Modul sebelumnya memiliki 6 kemungkinan opsi terkait strategi migrasi, AWS menyebutnya dengan 6 R.
 
+## Rehosting
+
+Rehosting juga dikenal sebagai lift and shift (angkat dan pindahkan). Opsi ini mudah dilakukan karena Anda tak perlu membuat perubahan apa pun. Cukup pindahkan aplikasi yang Anda miliki ke AWS.
+Dengan rehosting, Anda bisa menghemat hingga 30% dari total biaya walaupun tidak ada pengoptimalan apa pun pada aplikasi Anda.
+
+## Replatforming
+
+Strategi migrasi yang satu ini disebut juga dengan lift, tinker, and shift (angkat, perbaiki, dan pindahkan). Pada dasarnya, opsi ini masih berupa lift and shift namun Anda dapat melakukan beberapa pengoptimalan cloud. Dalam strategi ini, Anda tak akan mengubah arsitektur inti (core architecture) apa pun pada proses migrasi aplikasi.
+
+## Retiring
+
+AWS menemukan bahwa sebanyak 10% hingga 20% dari portofolio IT perusahaan menyertakan aplikasi yang tak lagi digunakan dan bisa dimatikan.
+Menghapus aplikasi yang tidak lagi digunakan, menghemat biaya dan memfokuskan tim pada aplikasi yang aktif digunakan.
+
+## Retaining
+
+Saat hendak melakukan migrasi ke AWS, mungkin Anda memiliki beberapa aplikasi yang akan segera deprecated (dihentikan). Tetapi, aplikasi tersebut masih perlu digunakan selama beberapa waktu.
+
+Nah, daripada memindahkan aplikasi tersebut ke AWS, sebaiknya Anda hanya memigrasikan aplikasi yang sekiranya masuk akal dan berguna untuk bisnis
 
 
 ## AWS Well-Architected Framework
