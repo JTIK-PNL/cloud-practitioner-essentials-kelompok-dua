@@ -51,29 +51,34 @@ AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan be
 
 ## AWS Well-Architected Framework
 
+<div>
 AWS Well-Architected Framework dirancang untuk membantu memahami cara merancang dan mengoperasikan sistem yang andal, aman, efisien, dan hemat biaya di AWS Cloud. AWS Well-Architected Framework terdiri dari 5 pilar 
 
-1. Operational Excellence (Keunggulan Operasional)
 
+<h2 class style=color:red; >
+1. Operational Excellence (Keunggulan Operasional) </h2>
+</div>
 Berguna menjalankan dan memantau sistem untuk memberikan nilai bisnis serta terus meningkatkan proses dan prosedur. Pilar Operational Excellence mencakup bagaimana organisasi  mendukung tujuan bisnis, kemampuan untuk menjalankan beban secara efektif.
 
 
 ## 
-<div>
-- Contohnya, melakukan operation as code (operasi sebagai kode), membuat anotasi dokumentasi, mengantisipasi kegagalan, dan sering memperbaiki prosedur operasi.
 
-<br>
-2. Security (Keamanan)
+- Contohnya, melakukan operation as code (operasi sebagai kode), membuat anotasi dokumentasi, mengantisipasi kegagalan, dan sering memperbaiki prosedur operasi.<br>
+
+<div>
+<h2 class style=color:red; >
+2. Security (Keamanan) </h2>
+</div>
 
 keamanan adalah prioritas utama AWS. Pilar ini melindungi informasi, sistem, dan aset Anda sekaligus memberikan nilai bisnis melalui risk assessment (penilaian risiko) dan strategi mitigasi.
-</div>
+
 
 
 ## 
 
 <div>
-
-3. Reliability (Keandalan)
+<h2 class style=color:red; >
+3. Reliability (Keandalan) </h2>
 
 mencakup kemampuan sistem untuk memastikan beban kerja melakukan fungsi dengan benar dan konsisten sesuai harapan.
 
@@ -90,16 +95,17 @@ contohnya seperti :
 ## 
 
 <div>
-4. Performance Efficiency (Efisiensi Kinerja)
+<h2 class style=color:red; >
+4. Performance Efficiency (Efisiensi Kinerja) </h2>
 
 Pilar ini berfokus pada penggunaan sumber daya IT dan komputasi secara efisien untuk memenuhi kebutuhan.
 
 Misalnya, menggunakan arsitektur serverless (tanpa server), melakukan eksperimen, dan merancang sistem agar dapat mendunia dalam hitungan menit.
 
-<br>
-
-5.Cost Optimization (Pengoptimalan Biaya) 
-
+<div>
+<h2 class style=color:red; >
+5.Cost Optimization (Pengoptimalan Biaya) </h2>
+</div>
 Pilar ini berfokus untuk mengontrol arah uang dibelanjakan guna menghindari biaya yang tak perlu.
 contoh: 
 menerapkan manajemen keuangan cloud, menganalisis pengeluaran, dan menggunakan managed service (layanan terkelola) untuk mengurangi biaya kepemilikan.
