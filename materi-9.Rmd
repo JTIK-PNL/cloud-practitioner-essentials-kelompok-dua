@@ -49,67 +49,81 @@ AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan be
 
 >3. AWS Snow Family: AWS Snow Family adalah serangkaian perangkat fisik yang dirancang untuk memindahkan data dalam skala besar ke dan dari AWS. Perangkat-perangkat ini dapat digunakan untuk memindahkan data yang sangat besar atau dalam kasus-kasus di mana koneksi internet yang cepat tidak tersedia.
 
-## AWS Well-Architected Framework
+## AWS Cloud Adoption Framework (AWS CAF)
 
-<div>
-AWS Well-Architected Framework dirancang untuk membantu memahami cara merancang dan mengoperasikan sistem yang andal, aman, efisien, dan hemat biaya di AWS Cloud. AWS Well-Architected Framework terdiri dari 5 pilar 
+Proses migrasi ke cloud memerlukan upaya dan keahlian ekstra untuk melakukan proses migrasi.
 
+contoh skenarionya seperti: Katakanlah kedai kopi Anda sudah memiliki banyak cabang yang tersebar di seluruh kota. Semua kedai tersebut berada di bawah naungan perusahaan Anda. Nah, setelah mempelajari tentang AWS, Anda pun semakin mantap untuk melakukan migrasi ke AWS.
 
-<h2 class style=color:red; >
-1. Operational Excellence (Keunggulan Operasional) </h2>
-</div>
-Berguna menjalankan dan memantau sistem untuk memberikan nilai bisnis serta terus meningkatkan proses dan prosedur. Pilar Operational Excellence mencakup bagaimana organisasi  mendukung tujuan bisnis, kemampuan untuk menjalankan beban secara efektif.
+Agar proses tersebut terlaksana dengan baik, Anda pun membentuk tim khusus dan melibatkan banyak pegawai dari departemen yang berbeda.
 
+##
+
+Kemudian timbul pertanyaan “Bagaimana agar proses migrasi cloud ini dapat berjalan sukses?”
+
+Tim layanan profesional AWS telah menciptakan AWS Cloud Adoption Framework (AWS CAF). Fungsinya untuk memberikan panduan agar proses migrasi ke AWS menjadi lebih cepat dan lancar.
+
+Framework atau kerangka kerja tersebut membagi panduan menjadi 6 area yang disebut dengan perspektif. Masing-masing perspektif meliputi tanggung jawab dari kelompok yang berbeda.
+
+## 
+1. Business (Bisnis)
+Perspektif ini membantu untuk beralih dari strategi yang semula memisahkan antara bisnis dan IT menjadi model bisnis yang mengintegrasikan strategi IT.
+Peran umum dalam perspektif Business meliputi:
+- Manajer bisnis
+- Manajer keuangan
+- Budget owners (pemilik anggaran)
+- Strategy stakeholders
+
+##
+
+2. People (Orang)
+Perspektif ini dapat membantu Anda dalam mempersiapkan tim dengan memperbarui skill staf dan proses organisasi untuk migrasi cloud. Perspektif ini juga membantu dalam memprioritaskan pelatihan, kepegawaian, dan perubahan organisasi.
+Peran Umum:
+- HR (Human Resource/Sumber Daya Manusia)
+- Staf
+- Manajer personalia
+
+##
+
+3. Governance (Tata Kelola)
+
+Perspektif ini berfokus mengintegrasikan tata Kelola IT dengan Organizational Governance. Perspektif ini memberikan panduan untuk mengidentifikasi dan menerapkan praktik IT Governance serta mendukung proses bisnis dengan teknologi.
+
+perspektif Governance juga berguna untuk memahami cara pembaruan keterampilan staf dan proses yang diperlukan untuk memastikan Business Governance (Tata kelola Bisnis) di cloud.
+
+Peran umum perspektif Governance ini mencakup: CIO (Chief Information Officer), Manajer program, Manajer proyek, Analis bisnis, Manajer portofolio
 
 ## 
 
-- Contohnya, melakukan operation as code (operasi sebagai kode), membuat anotasi dokumentasi, mengantisipasi kegagalan, dan sering memperbaiki prosedur operasi.<br>
+4. Platform 
 
-<div>
-<h2 class style=color:red; >
-2. Security (Keamanan) </h2>
-</div>
+Perspektif ini untuk merancang, menerapkan, dan mengoptimalkan arsitektur teknologi AWS berdasarkan sasaran bisnis. dan juga memberikan panduan strategis untuk desain, prinsip, layanan, dan kebijakan yang digunakan untuk menentukan infrastruktur AWS.
 
-keamanan adalah prioritas utama AWS. Pilar ini melindungi informasi, sistem, dan aset Anda sekaligus memberikan nilai bisnis melalui risk assessment (penilaian risiko) dan strategi mitigasi.
-
-
-
-## 
-
-<div>
-<h2 class style=color:red; >
-3. Reliability (Keandalan) </h2>
-
-mencakup kemampuan sistem untuk memastikan beban kerja melakukan fungsi dengan benar dan konsisten sesuai harapan.
-
-contohnya seperti :
-<br>
-
-- Pemulihan otomatis dari kegagalan infrastruktur atau layanan.
-- Horizontal scaling--telah dibahas pada Modul Komputasi di Cloud--untuk meningkatkan ketersediaan beban kerja.
-- Pengujian prosedur pemulihan.
-
-</div>
-
+perspektif ini juga mencakup prinsip dan pola yang berguna untuk mengimplementasikan solusi baru atau migrasi beban kerja on-premise Anda ke cloud.
+Beberapa peran umum perspektif Platform meliputi:
+- CTO (Chief Technology Officer)
+- Manajer IT
+- Arsitek cloud
 
 ## 
 
-<div>
-<h2 class style=color:red; >
-4. Performance Efficiency (Efisiensi Kinerja) </h2>
+5. Security
 
-Pilar ini berfokus pada penggunaan sumber daya IT dan komputasi secara efisien untuk memenuhi kebutuhan.
+Perspektif Keamanan akan memastikan organisasi/perusahaan  memenuhi tujuan keamanan untuk visibilitas, kemampuan audit, kontrol, dan ketangkasan (agility).
 
-Misalnya, menggunakan arsitektur serverless (tanpa server), melakukan eksperimen, dan merancang sistem agar dapat mendunia dalam hitungan menit.
+Peran umum perspektif ini di antaranya:
+CISO (Chief Information Security Officer), Manajer keamanan IT, Analisis keamanan IT
 
-<div>
-<h2 class style=color:red; >
-5.Cost Optimization (Pengoptimalan Biaya) </h2>
-</div>
-Pilar ini berfokus untuk mengontrol arah uang dibelanjakan guna menghindari biaya yang tak perlu.
-contoh: 
-menerapkan manajemen keuangan cloud, menganalisis pengeluaran, dan menggunakan managed service (layanan terkelola) untuk mengurangi biaya kepemilikan.
-</div>
+##
+
+6. Operations 
+
+Perspektif Operasi untuk membantu dalam mengaktifkan, menjalankan, menggunakan, mengoperasikan, dan memulihkan beban kerja IT ke tingkat yang disepakati dengan business stakeholder (pemangku kepentingan bisnis).
+
+Wawasan yang diperoleh akan menentukan prosedur operasi  serta mengidentifikasi perubahan proses dan pelatihan supaya terwujudnya adopsi cloud yang sukses.
+
+Peran umum perspektif Operasi meliputi:
+IT Operations Manager dan IT Support Manager
 
 ## Strategi Migrasi
 
