@@ -101,14 +101,6 @@ Full backup akan menyalin semua data di dalam volume untuk setiap pencadangan, s
 
 Lakukan snapshot untuk EBS volume secara teratur. Dengan begitu, jika sebuah drive corrupted atau rusak, maka tidak akan kehilangan data, melainkan dapat memulihkannya dari snapshot.
 
-> 1. You want its return value.
-> 2. You want it to have **some other effect**.
-
-<div class="fragment">
-These are (a bit misleadingly) called _side effects_. Any effect that is not the return value is a side effect.
-</div>
-
-
 
 ## Amazon Simple storage service (Amazon S3)
 
@@ -412,10 +404,11 @@ Selain itu, AWS menyediakan layanan akselerator untuk meningkatkan performa data
 
 Amazon ElastiCache: Layanan cache yang mendukung Redis dan Memcached, yang berfungsi untuk meningkatkan kecepatan read time untuk permintaan data umum dengan menambahkan lapisan cache pada database.
 
+##..
+
 Amazon DynamoDB Accelerator (DAX): Native caching layer untuk Amazon DynamoDB yang dirancang untuk meningkatkan kecepatan read time untuk data nonrelasional, memberikan latensi baca yang sangat rendah.
 
 Secara keseluruhan, layanan database tambahan ini membantu pengguna AWS memilih solusi database yang paling sesuai dengan kebutuhan spesifik mereka, memastikan performa optimal dan efisiensi dalam pengelolaan data.
-
 
 ## ..
 
