@@ -222,15 +222,7 @@ Semua hal tadi adalah proses yang biasanya harus Anda kelola sendiri jika menggu
 
 >- data center on-premise adalah  pusat data yang ditempatkan dan dikelola sendiri oleh perusahaan itu sendiri
 
-## layanan Amazon Aurora
-Ia adalah opsi database relasional kelas enterprise/perusahaan yang terkelola oleh AWS. Layanan ini memiliki banyak fitur, seperti:
 
->- Bisa bekerja secara kompatibel dengan MySQL dan PostgreSQL. Bahkan, dapat 5 kali lebih cepat dari database MySQL standar dan bisa 3 kali lebih cepat dari database PostgreSQL standar.
->- Memberikan performa yang setara dengan database komersial dengan perbandingan biaya 1/10.
->- Mampu memastikan replikasi data di seluruh fasilitas.
->- Menerapkan hingga 15 read replica (replika baca).
->- Mencadangkan secara berkelanjutan ke Amazon S3.
->- Menerapkan point-in-time recovery
 
 ## <class style="color:black;">Amazon DynamoDB
 
