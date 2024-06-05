@@ -162,20 +162,131 @@ Setelah mempelajari beberapa materi sebelumnya, kita telah memeliki beberapa waw
 >3. Enam manfaat utama menggunakan AWS Cloud
 
 
-## AWA Snow Family
+## <class style="color:black;">AWS Snow Family
 
->1. Mengubah pengeluaran di muka menjadi pengeluaran variabel
+<p style="text-align:center; font-size:85%;">
+**AWS** memperkenalkan perangkat **AWS Snow Family**.<br>
+Layanan ini adalah kumpulan perangkat fisik yang dapat membantu Anda untuk memindahkan data sampai dengan ukuran exabyte ke dalam dan keluar AWS. AWS Snow Family terdiri dari **AWS Snowcone**, **AWS Snowball**, dan **AWS Snowmobile**.</p>
 
->2. Manfaatkan skala ekonomi yang masif
+<p><img src="https://www.testpreptraining.com/blog/wp-content/uploads/2021/07/aws-snow-family-snowcone-snowball-snowmobile.a25e546daeb034621917b5350229456e525a1461-1-1024x323.png" alt="AWS Snow Family" width="900" height="300" style="display:block; margin:auto;"/>
 
->3. Berhenti menebak kapasitas
+##
+**AWS Snowcone**
+<div class="fragment">
+<p><img src="https://storage.googleapis.com/infiflexnew.appspot.com/5753487916793856" alt="AWS Snowcone" width="350" height="170" style="display:block; margin:auto;"/>
 
->4. Tingkatkan kecepatan dan ketangkasan
+<p style="text-align:center; font-size:85%;">
+**AWS Snowcone** merupakan penawaran yang terbaru di AWS Snow Family. **AWS Snowcone** adalah perangkat yang kecil, kokoh, dan aman.</p>
+<div class="fragment">
+<p style="text-align:center; font-size:85%;">
+Perangkat ini memiliki fitur sebagai berikut:
+<table style="width:60%">
+  <tr>
+    <td>**HDD (Hard Disk Drive)**</td>
+    <td>8 TB</td>
+  </tr>
+  <tr>
+    <td>**vCPU (virtual CPU)**</td>
+    <td>2 vCPU</td>
+  </tr>
+  <tr>
+    <td>**Memory**</td>
+    <td>4 GB</td>
+  </tr>
+</table>
 
->5. Hentikan biaya pengelolaan dan pemelihara data center
+##
+**AWS Snowball**
+<div class="fragment">
+<p><img src="https://img.ccjdigital.com/files/base/randallreilly/all/image/2018/10/ccj.AWS-Snowball-Edge-2018-10-05-17-02.png" alt="AWS Snowball" width="300" height="400" style="float:left; display:block; margin:auto;"/>
 
->6. Mendunia dalam hitungan menit
+<p style="text-align:center">
+AWS Snowball hadir dalam 2 versi: **Snowball Edge Storage Optimized** dan **Snowball Edge Compute Optimized**.<br><br>==>
+</p>
 
+##
+- Snowball Edge Storage Optimized<br>
 
+<div class="fragment">
+<p style="text-align:left; font-size:100%;">
+Selain berfungsi sebagai penyimpanan (storage) lokal dengan kebutuhan kapasitas yang lebih tinggi, perangkat ini sangat ideal untuk migrasi data berskala besar dan alur kerja transfer yang berulang.</p>
+
+<div class="fragment">
+<p style="text-align:center; font-size:85%;">
+Berikut adalah fitur yang terdapat pada perangkat jenis ini:
+<table style="width:60%">
+  <tr>
+    <td>**HDD (Hard Disk Drive)**</td>
+    <td>80 TB</td>
+  </tr>
+  <tr>
+    <td>**SSD (Solid Disk Drive)**</td>
+    <td>1 TB</td>
+  </tr>
+  <tr>
+    <td>**vCPU (virtual CPU)**</td>
+    <td>40 vCPU</td>
+  </tr>
+  <tr>
+    <td>**Memory**</td>
+    <td>80 GB</td>
+  </tr>
+</table>
+
+##
+- Snowball Edge Compute Optimized
+
+<div class="fragment">
+<p style="text-align:left; font-size:100%;">
+Jenis ini menyediakan sumber daya komputasi yang kuat untuk kasus penggunaan seperti machine learning, analisis data, pemrosesan, dan penyimpanan lokal.</p>
+
+<div class="fragment">
+<p style="text-align:center; font-size:85%;">
+Berikut adalah fitur yang terdapat pada perangkat jenis ini:
+<table style="width:75%">
+  <tr>
+    <td>**HDD (Hard Disk Drive)**</td>
+    <td>42 TB</td>
+  </tr>
+  <tr>
+    <td>**SSD (Solid Disk Drive)**</td>
+    <td>7,68 TB</td>
+  </tr>
+  <tr>
+    <td>**vCPU (virtual CPU)**</td>
+    <td>52 vCPU</td>
+  </tr>
+  <tr>
+    <td>**Memory**</td>
+    <td>208 GB</td>
+  </tr>
+  <tr>
+    <td>**GPU**</td>
+    <td>NVIDIA V100 (opsional)</td>
+  </tr>
+</table>
+
+##
+**AWS Snowmobile**
+<div class="fragment">
+<p><img src="https://www.jagatreview.com/wp-content/webp-express/webp-images/uploads/2016/12/AWS-Snowmobile.jpg.webp" alt="AWS Snowmobile" width="350" height="214" style="display:block; margin:auto;"/>
+
+<p style="text-align:center; font-size:90%;">
+**AWS Snowmobile** adalah layanan transfer data dengan skala exabyte yang digunakan untuk memindahkan data dalam jumlah besar ke AWS. Seperti namanya, perangkat ini disimpan di dalam kontainer pengiriman yang kokoh sepanjang 45 kaki dan ditarik oleh truk semi-trailer.</p>
+
+##
+Bagaimana cara kerjanya?
+
+<p>>1. AWS mengirimkan truk ke lokasi data center Anda.
+
+<p>>2. Personel AWS akan menghubungkannya ke jaringan lokal Anda.
+
+<p>>3. Mulai mentransfer data Anda ke Snowmobile.
+
+<p>>4. Snowmobile akan dibawa kembali ke AWS untuk diimpor ke Amazon S3.
+
+<div class="fragment">
+<p style="text-align:justify; font-size:75%;">
+**Catatan:** Semua perangkat **AWS Snow Family** dirancang aman dan tahan kerusakan baik di lokasi Anda maupun selama pengiriman. Data disimpan dengan enkripsi otomatis menggunakan kunci enkripsi 256-bit yang dapat Anda kendalikan melalui AWS Key Management Service (AWS KMS). </p>
 
 ## Inovasi dengan AWS
