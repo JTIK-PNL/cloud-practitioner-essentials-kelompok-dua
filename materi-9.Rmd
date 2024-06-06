@@ -50,25 +50,6 @@ AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan be
 >1. AWS Server Migration Service (SMS): Layanan ini memungkinkan Anda untuk mengotomatiskan proses migrasi beban kerja yang berjalan di server fisik, virtual, atau cloud lain ke AWS. Layanan ini dapat membantu Anda dalam mengurangi downtime dan kompleksitas migrasi.
 >>>>>>> f4514bd60c2547b8a65c918d3b3398eed513cd03
 
-## Rehosting
-
-Rehosting juga dikenal sebagai lift and shift (angkat dan pindahkan). Opsi ini mudah dilakukan karena Anda tak perlu membuat perubahan apa pun. Cukup pindahkan aplikasi yang Anda miliki ke AWS.
-Dengan rehosting, Anda bisa menghemat hingga 30% dari total biaya walaupun tidak ada pengoptimalan apa pun pada aplikasi Anda.
-
-## Replatforming
-
-Strategi migrasi yang satu ini disebut juga dengan lift, tinker, and shift (angkat, perbaiki, dan pindahkan). Pada dasarnya, opsi ini masih berupa lift and shift namun Anda dapat melakukan beberapa pengoptimalan cloud. Dalam strategi ini, Anda tak akan mengubah arsitektur inti (core architecture) apa pun pada proses migrasi aplikasi.
-
-## Retiring
-
-AWS menemukan bahwa sebanyak 10% hingga 20% dari portofolio IT perusahaan menyertakan aplikasi yang tak lagi digunakan dan bisa dimatikan.
-Menghapus aplikasi yang tidak lagi digunakan, menghemat biaya dan memfokuskan tim pada aplikasi yang aktif digunakan.
-
-## Retaining
-
-Saat hendak melakukan migrasi ke AWS, mungkin Anda memiliki beberapa aplikasi yang akan segera deprecated (dihentikan). Tetapi, aplikasi tersebut masih perlu digunakan selama beberapa waktu.
-
-Nah, daripada memindahkan aplikasi tersebut ke AWS, sebaiknya Anda hanya memigrasikan aplikasi yang sekiranya masuk akal dan berguna untuk bisnis
 
 ## Pengantar Migrasi dan Inovasi
 
@@ -155,12 +136,45 @@ IT Operations Manager dan IT Support Manager
 
 ## Strategi Migrasi
 
-Setelah mempelajari beberapa materi sebelumnya, kita telah memeliki beberapa wawasan akan AWS,antara lain sebagai berikut:
+Setiap aplikasi yang berarsitektur tightly coupled yang telah kita bahas di Modul Komputasi di Cloud akan memiliki 6 kemungkinan opsi terkait strategi migrasi, AWS menyebutnya dengan 6 R.
+Apa Saja 6R itu?
 
->1. Layanan AWS
->2. Terminologi AWS
->3. Enam manfaat utama menggunakan AWS Cloud
 
+## Rehosting
+
+Rehosting juga dikenal sebagai lift and shift (angkat dan pindahkan). Opsi ini mudah dilakukan karena Anda tak perlu membuat perubahan apa pun. Cukup pindahkan aplikasi yang Anda miliki ke AWS.
+Dengan rehosting, Anda bisa menghemat hingga 30% dari total biaya walaupun tidak ada pengoptimalan apa pun pada aplikasi Anda.
+
+## Replatforming
+
+Strategi migrasi yang satu ini disebut juga dengan lift, tinker, and shift (angkat, perbaiki, dan pindahkan). Pada dasarnya, opsi ini masih berupa lift and shift namun Anda dapat melakukan beberapa pengoptimalan cloud. Dalam strategi ini, Anda tak akan mengubah arsitektur inti (core architecture) apa pun pada proses migrasi aplikasi.
+
+## Retiring
+
+AWS menemukan bahwa sebanyak 10% hingga 20% dari portofolio IT perusahaan menyertakan aplikasi yang tak lagi digunakan dan bisa dimatikan.
+Menghapus aplikasi yang tidak lagi digunakan, menghemat biaya dan memfokuskan tim pada aplikasi yang aktif digunakan.
+
+## Retaining
+
+Saat hendak melakukan migrasi ke AWS, mungkin Anda memiliki beberapa aplikasi yang akan segera deprecated (dihentikan). Tetapi, aplikasi tersebut masih perlu digunakan selama beberapa waktu.
+
+Nah, daripada memindahkan aplikasi tersebut ke AWS, sebaiknya Anda hanya memigrasikan aplikasi yang sekiranya masuk akal dan berguna untuk bisnis
+
+## Repurchasing
+
+strategi ini umumnya terjadi terjadi pada perusahaan yang ingin meninggalkan vendor perangkat lunak lama dan memulai dengan yang baru. contohnya
+
+>1. Mengakhiri kontrak dengan vendor CRM (Customer Relationship Management) lama dan pindah ke yang baru seperti Salesforce.com
+
+>2. Beralih dari sistem HR (Human Resource) ke aplikasi Workday.
+
+>3. Berpindah dari perangkat lunak CMS (Content Management System) ke software Drupal.
+
+>4. Mengakhiri lisensi dengan vendor database yang usang dan migrasi ke database cloud.
+
+## Refactoring/re-architecting
+
+Pada opsi ini kita menulis kode baru. Hal ini didorong oleh kebutuhan bisnis yang kuat untuk menambahkan fitur, skala, atau kinerja yang mungkin sulit diraih pada data center on-premise
 
 ## <class style="color:black;">AWS Snow Family
 
