@@ -28,7 +28,7 @@ output:
 
 >3. Enam faktor utama dari strategi migrasi cloud.
 
->4. Manfaat dari solusi migrasi data AWS, seperti AWS Snowcone, AWS Snowball, dan AWS Snowmobile.
+>4. Manfaat dari solusi migrasi data AWS, seperti AWS Snowcone, AWS Snowball, 
 
 >5. Cakupan luas dari solusi inovatif yang ditawarkan AWS.
 
@@ -39,14 +39,22 @@ output:
 
 AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan beban kerja dari pusat data on-premise ke AWS Cloud.
 
->1. AWS Cloud Adoption Framework (AWS CAF) adalah kerangka kerja yang disediakan oleh AWS untuk membantu organisasi dalam mengadopsi komputasi awan untuk infrastruktur mereka. Kerangka kerja ini memanfaatkan pengalaman dan praktik terbaik AWS untuk membantu transformasi digital dan percepatan hasil bisnis melalui penggunaan inovatif AWS Cloud 
+>1. AWS Cloud Adoption Framework (AWS CAF) adalah kerangka kerja yang disediakan oleh AWS untuk membantu organisasi dalam mengadopsi komputasi awan untuk infrastruktur mereka, membantu transformasi digital dan percepatan hasil bisnis melalui penggunaan inovatif AWS Cloud 
 
 
 ## Pengantar Migrasi dan Inovasi
 
 >2. AWS Snow Family: AWS Snow Family adalah serangkaian perangkat fisik yang dirancang untuk memindahkan data dalam skala besar ke dan dari AWS. Perangkat-perangkat ini dapat digunakan untuk memindahkan data yang sangat besar atau dalam kasus-kasus di mana koneksi internet yang cepat tidak tersedia.
 
->3. AWS Snowcone dapat digunakan untuk mengumpulkan, memproses, dan mentransfer data ke AWS secara online dengan menggunakan layanan seperti AWS DataSync. 
+>3. AWS Snowcone dapat digunakan untuk mengumpulkan, memproses, dan mentransfer data ke AWS secara online dengan menggunakan layanan seperti AWS DataSync.
+
+
+## Pengantar Migrasi dan Inovasi
+
+>4. AWS Snowball dan AWS Snowmobile adalah perangkat fisik yang ditawarkan oleh Amazon Web Services (AWS) untuk membantu dalam migrasi dan transfer data ke cloud
+
+>5. AWS Snowball adalah perangkat fisik yang dirancang untuk memindahkan data dalam skala petabyte ke AWS secara fisik, setara dengan 1.024 terabyte. AWS Snowmobile adalah solusi yang dirancang untuk memindahkan data dalam skala eksabita (eksabyte) ke AWS,lebih besar dari petabyte.
+
 
 ## AWS Cloud Adoption Framework (AWS CAF)
 
