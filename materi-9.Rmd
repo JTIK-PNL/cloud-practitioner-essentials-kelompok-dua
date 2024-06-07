@@ -44,7 +44,7 @@ AWS menyediakan berbagai layanan migrasi yang dapat membantu Anda memindahkan be
 
 ## Pengantar Migrasi dan Inovasi
 
->2. AWS Snow Family: AWS Snow Family adalah serangkaian perangkat fisik yang dirancang untuk memindahkan data dalam skala besar ke dan dari AWS. Perangkat-perangkat ini dapat digunakan untuk memindahkan data yang sangat besar atau dalam kasus-kasus di mana koneksi internet yang cepat tidak tersedia.
+>2. AWS Snow Family: AWS Snow Family adalah serangkaian perangkat fisik yang dirancang untuk memindahkan data dalam skala besar. Perangkat-perangkat ini dapat digunakan untuk memindahkan data yang sangat besar atau dalam kasus-kasus di mana koneksi internet yang cepat tidak tersedia.
 
 >3. AWS Snowcone dapat digunakan untuk mengumpulkan, memproses, dan mentransfer data ke AWS secara online dengan menggunakan layanan seperti AWS DataSync.
 
