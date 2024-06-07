@@ -302,3 +302,47 @@ Bagaimana cara kerjanya?
 **Catatan:** Semua perangkat **AWS Snow Family** dirancang aman dan tahan kerusakan baik di lokasi Anda maupun selama pengiriman. Data disimpan dengan enkripsi otomatis menggunakan kunci enkripsi 256-bit yang dapat Anda kendalikan melalui AWS Key Management Service (AWS KMS). </p>
 
 ## Inovasi dengan AWS
+
+Nah, demi mendorong inovasi dengan AWS, Anda perlu mendeskripsikan kondisi-kondisi berikut terlebih dahulu:
+
+1. Keadaan saat ini.
+2. Keadaan yang diinginkan.
+3. Masalah yang sedang Anda coba pecahkan.
+
+## ..
+
+contoh penerapannya
+
+1. Aplikasi Serveless
+
+Aplikasi serverless adalah aplikasi yang tidak mengharuskan Anda untuk menyiapkan, mengurus, atau mengelola server.
+
+contoh layanan: AWS Lambda
+
+AWS Lambda adalah layanan komputasi serverless yang memungkinkan Anda menjalankan kode tanpa perlu mengelola server, cukup dengan memicu fungsi Lambda, sehingga Anda dapat fokus pada pengembangan produk atau solusi Anda.
+
+## ..
+
+2. Artificial Intelligence
+
+AWS menyediakan berbagai layanan yang mendukung kecerdasan buatan (AI), termasuk Amazon Transcribe untuk mengubah ucapan menjadi teks secara otomatis, Amazon Comprehend untuk mendapatkan wawasan dan hubungan dalam teks menggunakan pemrosesan bahasa alami (NLP), Amazon Fraud Detector untuk mengidentifikasi aktivitas penipuan online, Amazon Lex untuk membangun chatbot interaktif, dan Amazon Textract untuk membaca dan memproses teks, tulisan tangan, form, tabel, dan data lainnya secara otomatis dari jutaan halaman dokumen dalam hitungan jam.
+
+## ..
+
+3. Machine Learning
+
+Machine learning (pemelajaran mesin) memungkinkan Anda untuk menganalisis data, memecahkan masalah kompleks, dan memprediksi hasil sebelum terjadi. AWS menawarkan platform cloud yang komprehensif, optimal untuk machine learning dengan komputasi berperforma tinggi, serta keamanan dan analitik yang andal.
+
+## ..
+
+Layanan machine learning AWS meliputi:
+
+1. Amazon SageMaker: Membangun, melatih, dan menerapkan model machine learning dalam skala besar secara cepat dengan dukungan untuk semua open-source framework.
+
+2. AWS DeepRacer: Memberi kesempatan bagi developer untuk bereksperimen dengan reinforcement learning melalui simulator balap 3D berbasis cloud.
+
+## ..
+
+Selain yang sudah disebutkan di atas, masih ada berbagai kategori lainnya. Misal dalam perkara migrasi ke AWS, Anda bisa memiliki infrastruktur berbasis VMware layaknya yang Anda gunakan di on-premise dengan VMware Cloud on AWS.
+
+AWS juga menawarkan teknologi baru, seperti IoT (Internet of Things) yang dapat mengaktifkan perangkat terhubung untuk berkomunikasi di seluruh dunia.
