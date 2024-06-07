@@ -329,6 +329,22 @@ AWS menyediakan berbagai layanan yang mendukung kecerdasan buatan (AI), termasuk
 
 ## ..
 
+Berikut adalah beberapa layanan AWS yang dikategorikan ke dalam AI
+
+1. Amazon Transcribe : Layanan speech-to-text (mengubah ucapan menjadi teks) secara otomatis.
+
+2. Amazon Comprehend : Layanan NLP (Natural Language Processing/pemrosesan bahasa alami) untuk mencari insight (wawasan) dan hubungan dalam teks.
+
+3. Amazon Fraud Detector : Layanan untuk mengidentifikasi aktivitas online yang berpotensi penipuan.
+
+## ..
+
+4. Amazon Lex : Layanan ini adalah solusi AI siap pakai yang dapat membantu Anda dalam membangun chatbot interaktif.
+
+5. Amazon Textract : Layanan yang dapat membaca dan memproses teks, tulisan tangan, form, tabel, dan data lainnya secara otomatis dari jutaan halaman dokumen dalam hitungan jam.
+
+## ..
+
 3. Machine Learning
 
 Machine learning (pemelajaran mesin) memungkinkan Anda untuk menganalisis data, memecahkan masalah kompleks, dan memprediksi hasil sebelum terjadi. AWS menawarkan platform cloud yang komprehensif, optimal untuk machine learning dengan komputasi berperforma tinggi, serta keamanan dan analitik yang andal.
